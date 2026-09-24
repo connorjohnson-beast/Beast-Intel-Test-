@@ -30,6 +30,9 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+EASTERN = ZoneInfo("America/New_York")
 
 ROOT = Path(__file__).parent
 CONFIG_PATH = ROOT / "config.json"
@@ -273,7 +276,9 @@ def write_dashboard(results, watch_terms):
     html = DASHBOARD_TEMPLATE.read_text()
     results_js = json.dumps(results, indent=2)
     tags_js = json.dumps(watch_terms)
-    stamp = datetime.now(timezone.utc).strftime("%b %d, %Y %H:%M UTC")
+    # Eastern time, 12-hour clock. Shows EST in winter and EDT in summer automatically.
+    now_et = datetime.now(EASTERN)
+    stamp = now_et.strftime("%b %d, %Y ") + now_et.strftime("%I:%M %p").lstrip("0") + now_et.strftime(" %Z")
 
     source_names = ", ".join(sorted({s.__name__.replace("fetch_", "").replace("_", " ").title() for s in SOURCES}))
     html = html.replace(
