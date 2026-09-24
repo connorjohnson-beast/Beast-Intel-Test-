@@ -1,0 +1,63 @@
+name: Beast Intel Sweep
+
+# Runs every 6 hours on its own, or any time from Actions -> Run workflow.
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Never let two runs overlap.
+concurrency:
+  group: beast-intel-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run the sweep
+        run: python3 fetch_intel.py
+
+      - name: Publish the updated dashboard
+        run: |
+          git config user.name "beast-intel-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          # Set the fresh results aside.
+          mkdir -p /tmp/sweep_out
+          cp live_findings.json seen.json dashboard.html /tmp/sweep_out/
+
+          for i in 1 2 3 4 5; do
+            # Start from whatever is on GitHub right now, then put the fresh results on top.
+            # Nothing is ever merged, so there is nothing to conflict.
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/sweep_out/live_findings.json /tmp/sweep_out/seen.json /tmp/sweep_out/dashboard.html .
+            git add live_findings.json seen.json dashboard.html
+
+            if git diff --quiet --cached; then
+              echo "Nothing new to publish."
+              exit 0
+            fi
+
+            git commit -m "Automatic sweep update"
+            if git push origin HEAD:main; then
+              echo "Published successfully."
+              exit 0
+            fi
+
+            echo "Save attempt $i was rejected, trying again in 5 seconds..."
+            sleep 5
+          done
+
+          echo "Could not publish after 5 attempts."
+          exit 1
