@@ -1,9 +1,5 @@
 name: Beast Intel Sweep
 
-# Runs automatically every 6 hours, and any time you want to trigger it
-# by hand from the "Actions" tab on GitHub. Completely free on a normal
-# GitHub account — this uses a tiny fraction of the free monthly minutes
-# every account gets.
 on:
   schedule:
     - cron: "0 */6 * * *"
@@ -11,6 +7,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: beast-intel-sweep
+  cancel-in-progress: false
 
 jobs:
   sweep:
@@ -31,5 +31,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add live_findings.json seen.json dashboard.html
           git diff --quiet --cached || git commit -m "Automatic sweep update"
-          git pull --rebase --autostash origin main
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "retrying..."
+            sleep 5
+          done
