@@ -1,0 +1,34 @@
+name: Beast Intel Sweep
+
+# Runs automatically every 6 hours, and any time you want to trigger it
+# by hand from the "Actions" tab on GitHub. Completely free on a normal
+# GitHub account — this uses a tiny fraction of the free monthly minutes
+# every account gets.
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run the sweep
+        run: python3 fetch_intel.py
+
+      - name: Publish the updated dashboard
+        run: |
+          git config user.name "beast-intel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add live_findings.json seen.json dashboard.html
+          git diff --quiet --cached || git commit -m "Automatic sweep update"
+          git push
