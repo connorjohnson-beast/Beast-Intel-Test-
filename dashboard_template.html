@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beast OSINT Test — Online Monitoring</title>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+<script src="https://unpkg.com/react-is@18.2.0/umd/react-is.production.min.js"></script>
+<script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body { margin: 0; background: #0f172a; }
+  #root:empty::before {
+    content: 'Loading Beast OSINT Test…';
+    display: block;
+    padding: 3rem;
+    text-align: center;
+    color: #64748b;
+    font-family: system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/plain" id="app-source">
+// =============================================================================
+// GLOBALS
+// =============================================================================
+const { useState, useMemo, useEffect } = React;
+const {
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  PieChart, Pie, Cell
+} = window.Recharts;
+
+// =============================================================================
+// ICONS — small inline SVG set (feather/lucide-style outline icons), so this
+// page has zero external icon-library dependency.
+// =============================================================================
+const ICON_PATHS = {
+  ShieldAlert: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><line x1="12" y1="8" x2="12" y2="13" /><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none" /></>,
+  ShieldCheck: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></>,
+  AlertTriangle: <><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" /><line x1="12" y1="9" x2="12" y2="13" /><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none" /></>,
+  Search: <><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></>,
+  PlusCircle: <><circle cx="12" cy="12" r="10" /><path d="M12 8v8" /><path d="M8 12h8" /></>,
+  X: <><path d="M18 6 6 18" /><path d="m6 6 12 12" /></>,
+  Play: <polygon points="6 3 20 12 6 21 6 3" />,
+  RefreshCw: <><path d="M21 12a9 9 0 1 1-2.6-6.4L21 8" /><path d="M21 3v5h-5" /></>,
+  Activity: <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />,
+  Eye: <><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></>,
+  FileText: <><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6" /><line x1="8" y1="13" x2="16" y2="13" /><line x1="8" y1="17" x2="16" y2="17" /></>,
+  Copy: <><rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></>,
+  ExternalLink: <><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></>,
+  Bookmark: <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />,
+  Trash2: <><polyline points="3 6 5 6 21 6" /><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><line x1="10" y1="11" x2="10" y2="17" /><line x1="14" y1="11" x2="14" y2="17" /></>,
+  TrendingUp: <><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></>,
+  BarChart3: <><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></>,
+  Globe: <><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z" /></>,
+  CheckCircle2: <><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></>,
+  Clock: <><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></>,
+  Flame: <path d="M8.5 14.5c0-1.4-.5-2-1-3-1-2-.2-4 2-6 .4 2.4 1.9 4.7 3.8 6.3 1.9 1.5 2.7 3.3 2.7 5.2a7 7 0 1 1-14 0c0-1.1.4-2.2 1-3 1.1 1.4 2.4 1.9 3.4 2Z" />,
+  UserCircle2: <><circle cx="12" cy="12" r="10" /><circle cx="12" cy="10" r="3" /><path d="M7 20a5 5 0 0 1 10 0" /></>,
+  Bell: <><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.7 21a2 2 0 0 1-3.4 0" /></>,
+  BellOff: <><path d="M17 17H4s3-2 3-9a6 6 0 0 1 .53-2.47" /><path d="M13.7 21a2 2 0 0 1-3.4 0" /><path d="M8.7 3.3A6 6 0 0 1 18 8c0 2.5.5 4.4 1.1 5.8" /><line x1="2" y1="2" x2="22" y2="22" /></>,
+  MessageSquare: <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />,
+  Fingerprint: <><path d="M12 2a8 8 0 0 0-8 8c0 4 2 6 2 10" /><path d="M12 6a6 6 0 0 0-6 6c0 3 1 5 1 7" /><path d="M12 10a2 2 0 0 0-2 2c0 3 1 5 3 7" /><path d="M16 6.5A8 8 0 0 1 20 10c0 4-1 6-1 8" /></>,
+  Download: <><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></>,
+  Users: <><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></>,
+  MapPin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="3" /></>,
+  History: <><path d="M3 3v5h5" /><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" /><path d="M12 7v5l4 2" /></>,
+  Send: <><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></>,
+  Gauge: <><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /><path d="M12 2a10 10 0 0 0-8 16" /><path d="M12 2a10 10 0 0 1 8 16" /><line x1="12" y1="15" x2="16" y2="9" /></>,
+  Radio: <><circle cx="12" cy="12" r="2" /><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.4" /><path d="M19.1 19.1a10 10 0 0 0 0-14.2" /><path d="M16.2 16.2a6 6 0 0 0 0-8.4" /></>,
+  Mail: <><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 6-10 7L2 6" /></>,
+  KeyRound: <><path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z" /><circle cx="16.5" cy="7.5" r="0.6" fill="currentColor" stroke="none" /></>
+};
+
+function Icon({ name, className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      {ICON_PATHS[name] || <circle cx="12" cy="12" r="9" />}
+    </svg>
+  );
+}
+
+const ShieldAlert = p => <Icon name="ShieldAlert" {...p} />;
+const ShieldCheck = p => <Icon name="ShieldCheck" {...p} />;
+const AlertTriangle = p => <Icon name="AlertTriangle" {...p} />;
+const Search = p => <Icon name="Search" {...p} />;
+const PlusCircle = p => <Icon name="PlusCircle" {...p} />;
+const X = p => <Icon name="X" {...p} />;
+const Play = p => <Icon name="Play" {...p} />;
+const RefreshCw = p => <Icon name="RefreshCw" {...p} />;
+const Activity = p => <Icon name="Activity" {...p} />;
+const Eye = p => <Icon name="Eye" {...p} />;
+const FileText = p => <Icon name="FileText" {...p} />;
+const Copy = p => <Icon name="Copy" {...p} />;
+const ExternalLink = p => <Icon name="ExternalLink" {...p} />;
+const Bookmark = p => <Icon name="Bookmark" {...p} />;
+const Trash2 = p => <Icon name="Trash2" {...p} />;
+const TrendingUp = p => <Icon name="TrendingUp" {...p} />;
+const BarChart3 = p => <Icon name="BarChart3" {...p} />;
+const Globe = p => <Icon name="Globe" {...p} />;
+const CheckCircle2 = p => <Icon name="CheckCircle2" {...p} />;
+const Clock = p => <Icon name="Clock" {...p} />;
+const Flame = p => <Icon name="Flame" {...p} />;
+const UserCircle2 = p => <Icon name="UserCircle2" {...p} />;
+const Bell = p => <Icon name="Bell" {...p} />;
+const BellOff = p => <Icon name="BellOff" {...p} />;
+const MessageSquare = p => <Icon name="MessageSquare" {...p} />;
+const Fingerprint = p => <Icon name="Fingerprint" {...p} />;
+const Download = p => <Icon name="Download" {...p} />;
+const Users = p => <Icon name="Users" {...p} />;
+const MapPin = p => <Icon name="MapPin" {...p} />;
+const History = p => <Icon name="History" {...p} />;
+const Send = p => <Icon name="Send" {...p} />;
+const Gauge = p => <Icon name="Gauge" {...p} />;
+const Radio = p => <Icon name="Radio" {...p} />;
+const Mail = p => <Icon name="Mail" {...p} />;
+const KeyRound = p => <Icon name="KeyRound" {...p} />;
+
+// =============================================================================
+// LOCAL PERSISTENCE (real browser localStorage)
+// =============================================================================
+function storageGet(key) {
+  try {
+    const raw = localStorage.getItem('aegis:' + key);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+function storageSet(key, value) {
+  try {
+    localStorage.setItem('aegis:' + key, JSON.stringify(value));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// =============================================================================
+// STATIC REFERENCE DATA
+// =============================================================================
+
+const CATEGORY_KEYS = [
+  'Threats & Security Risks',
+  'Negativity & Defamation',
+  'Exposures & PII Leaks',
+  'Impersonation & Brand Abuse',
+  'Operational & Financial Intel'
+];
+
+const CATEGORY_STYLES = {
+  'Threats & Security Risks': { text: 'text-rose-400', softBg: 'bg-rose-950/50', border: 'border-rose-800/50', dot: 'bg-rose-500', chart: '#f43f5e', ring: 'ring-rose-500' },
+  'Negativity & Defamation': { text: 'text-amber-400', softBg: 'bg-amber-950/50', border: 'border-amber-800/50', dot: 'bg-amber-500', chart: '#f59e0b', ring: 'ring-amber-500' },
+  'Exposures & PII Leaks': { text: 'text-yellow-400', softBg: 'bg-yellow-950/50', border: 'border-yellow-800/50', dot: 'bg-yellow-500', chart: '#eab308', ring: 'ring-yellow-500' },
+  'Impersonation & Brand Abuse': { text: 'text-violet-400', softBg: 'bg-violet-950/50', border: 'border-violet-800/50', dot: 'bg-violet-500', chart: '#a78bfa', ring: 'ring-violet-500' },
+  'Operational & Financial Intel': { text: 'text-sky-400', softBg: 'bg-sky-950/50', border: 'border-sky-800/50', dot: 'bg-sky-500', chart: '#38bdf8', ring: 'ring-sky-500' }
+};
+
+const CATEGORY_ICONS = {
+  'Threats & Security Risks': ShieldAlert,
+  'Negativity & Defamation': MessageSquare,
+  'Exposures & PII Leaks': Fingerprint,
+  'Impersonation & Brand Abuse': Copy,
+  'Operational & Financial Intel': BarChart3
+};
+
+const SEVERITY_STYLES = {
+  Critical: 'bg-rose-950 border-rose-800 text-rose-400',
+  High: 'bg-amber-950 border-amber-800 text-amber-400',
+  Medium: 'bg-yellow-950 border-yellow-800 text-yellow-400',
+  Low: 'bg-sky-950 border-sky-800 text-sky-400'
+};
+
+const STATUS_STAGES = ['New', 'Triaged', 'Investigating', 'Actioned', 'Resolved'];
+
+const TEAM = ['Unassigned', 'Aria Chen', 'Jordan Blake', 'Priya Nair', 'Sam Okafor'];
+
+const SOURCE_RELIABILITY = {
+  'Paste Dump': 2, 'Encrypted Chat': 2, 'Social Forum': 3, 'Grievance Site': 2,
+  'Credential Breach': 4, 'Data Broker': 3, 'Flight Tracking': 5, 'Legal Registry': 5,
+  'Social Media': 3, 'Domain Registry': 4, 'Brand Impersonation': 4, 'Web Search': 3
+};
+
+const INITIAL_SEARCH_RESULTS = [];
+
+const INITIAL_SAVED_KEYWORDS = [];
+
+const TIMELINE_DATA = [
+  { day: 'Day 1', hits: 6 }, { day: 'Day 2', hits: 9 }, { day: 'Day 3', hits: 7 },
+  { day: 'Day 4', hits: 12 }, { day: 'Day 5', hits: 15 }, { day: 'Day 6', hits: 11 },
+  { day: 'Day 7', hits: 18 }, { day: 'Day 8', hits: 14 }, { day: 'Day 9', hits: 21 },
+  { day: 'Day 10', hits: 19 }, { day: 'Day 11', hits: 25 }, { day: 'Day 12', hits: 22 },
+  { day: 'Day 13', hits: 28 }, { day: 'Day 14', hits: 24 }
+];
+
+// Ready-to-edit dork query templates. {NAME}, {COMPANY}, {EMAIL} and
+// {DOMAIN} are placeholders — swap them for your actual target before
+// searching.
+const DORK_TEMPLATES = [
+  { label: 'Home address exposure', query: '"{NAME}" ("home address" OR "residential address" OR "lives at")' },
+  { label: 'PII / SSN dumps', query: '"{NAME}" ("SSN" OR "social security number" OR "date of birth") (site:pastebin.com OR site:justpaste.it OR site:ghostbin.com)' },
+  { label: 'Credential leaks', query: '"{EMAIL}" (password OR breach OR "combo list" OR "stealer log")' },
+  { label: 'Physical threats', query: '"{NAME}" (threat OR "going to" OR kill OR attack) -site:{DOMAIN}' },
+  { label: 'Protest / event risk', query: '"{COMPANY}" (protest OR blockade OR boycott) (event OR summit OR conference OR keynote)' },
+  { label: 'Boycott / defamation', query: '"{COMPANY}" (boycott OR scam OR fraud OR "class action")' },
+  { label: 'Grievance sites', query: '("{NAME}" OR "{COMPANY}") (site:ripoffreport.com OR site:glassdoor.com OR site:trustpilot.com OR site:consumeraffairs.com)' },
+  { label: 'Fake / impersonation profiles', query: '"{NAME}" ("fake profile" OR impersonat* OR "not affiliated with")' },
+  { label: 'Typosquat domains', query: '"{COMPANY}" -site:{DOMAIN} (login OR payroll OR portal OR "reset your password")' },
+  { label: 'Court / legal filings', query: '("{NAME}" OR "{COMPANY}") (site:pacer.gov OR site:courtlistener.com OR site:sec.gov OR site:courthousenews.com)' },
+  { label: 'Data broker profiles', query: '"{NAME}" (site:spokeo.com OR site:whitepages.com OR site:beenverified.com OR site:truepeoplesearch.com)' },
+  { label: 'Recent news mentions', query: '"{NAME}" OR "{COMPANY}" (news OR article) after:2026-01-01' }
+];
+// SMALL PRESENTATIONAL HELPERS
+// =============================================================================
+
+function Sparkline({ data, color = '#34d399', width = 76, height = 22 }) {
+  const max = Math.max(...data, 1);
+  const min = Math.min(...data, 0);
+  const range = max - min || 1;
+  const points = data.map((d, i) => {
+    const x = (i / (data.length - 1)) * width;
+    const y = height - ((d - min) / range) * height;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  return (
+    <svg width={width} height={height} className="overflow-visible shrink-0">
+      <polyline points={points} fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ReliabilityDots({ score }) {
+  return (
+    <div className="flex items-center space-x-0.5" title={`Source reliability ${score}/5`}>
+      {[1, 2, 3, 4, 5].map(i => (
+        <span key={i} className={`w-1.5 h-1.5 rounded-full ${i <= score ? 'bg-emerald-400' : 'bg-slate-700'}`} />
+      ))}
+    </div>
+  );
+}
+
+function StatusStepper({ status, onChange }) {
+  const currentIdx = STATUS_STAGES.indexOf(status);
+  return (
+    <div className="flex items-center flex-wrap gap-1.5">
+      {STATUS_STAGES.map((stage, i) => {
+        const done = i <= currentIdx;
+        return (
+          <button key={stage} onClick={() => onChange(stage)} className={`text-[10px] font-semibold px-2 py-1 rounded-full border transition-colors ${done ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300' : 'bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-300 hover:border-slate-600'}`}>
+            {stage}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function KpiCard({ icon: Icon, label, value, sub, accent }) {
+  return (
+    <div className="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 flex items-center justify-between shadow-xl">
+      <div>
+        <p className="text-[11px] text-slate-400">{label}</p>
+        <p className="text-2xl font-bold text-slate-100 mt-1">{value}</p>
+        {sub && <p className="text-[11px] text-slate-400 mt-0.5">{sub}</p>}
+      </div>
+      <div className={`p-2.5 rounded-xl ${accent}`}>
+        <Icon className="w-5 h-5" />
+      </div>
+    </div>
+  );
+}
+
+// =============================================================================
+// MAIN APPLICATION
+// =============================================================================
+
+function App() {
+  const [searchResults, setSearchResults] = useState(INITIAL_SEARCH_RESULTS);
+  const [savedKeywords, setSavedKeywords] = useState(INITIAL_SAVED_KEYWORDS);
+
+  const [searchInput, setSearchInput] = useState('');
+  const [activeKeywordTags, setActiveKeywordTags] = useState([]);
+  const [newTagInput, setNewTagInput] = useState('');
+  const [dorkOperator, setDorkOperator] = useState('NONE');
+
+  const [activeCategoryTab, setActiveCategoryTab] = useState('ALL');
+  const [selectedSeverity, setSelectedSeverity] = useState('ALL');
+  const [selectedStatus, setSelectedStatus] = useState('ALL');
+  const [selectedAssignee, setSelectedAssignee] = useState('ALL');
+  const [sortBy, setSortBy] = useState('newest');
+
+  const [selectedResult, setSelectedResult] = useState(null);
+  const [copyFeedback, setCopyFeedback] = useState(false);
+  const [noteDraft, setNoteDraft] = useState('');
+
+  const [showManualForm, setShowManualForm] = useState(false);
+  const [manualDraft, setManualDraft] = useState({ title: '', url: '', source: '', category: CATEGORY_KEYS[0], severity: 'Medium', snippet: '' });
+
+  const constructedSearchQuery = useMemo(() => {
+    let base = searchInput.trim();
+    if (!base && activeKeywordTags.length > 0) base = activeKeywordTags.map(t => `"${t}"`).join(' OR ');
+    if (dorkOperator === 'PASTE') base = `site:pastebin.com OR site:justpaste.it ${base}`;
+    if (dorkOperator === 'FORUMS') base = `site:reddit.com OR site:4chan.org ${base}`;
+    if (dorkOperator === 'DOCS') base = `filetype:pdf OR filetype:xlsx "CONFIDENTIAL" ${base}`;
+    if (dorkOperator === 'EXACT_PII') base = `${base} "Home Address" OR "Cell" OR "SSN"`;
+    if (dorkOperator === 'BRAND') base = `${base} -site:{DOMAIN} "{COMPANY}"`;
+    return base || '"Executive Name" "Home Address"';
+  }, [searchInput, activeKeywordTags, dorkOperator]);
+
+  const categoryCounts = useMemo(() => {
+    const counts = {};
+    CATEGORY_KEYS.forEach(k => (counts[k] = 0));
+    searchResults.forEach(res => { if (counts[res.category] !== undefined) counts[res.category]++; });
+    return counts;
+  }, [searchResults]);
+
+  const statusCounts = useMemo(() => {
+    const counts = {};
+    STATUS_STAGES.forEach(s => (counts[s] = 0));
+    searchResults.forEach(r => { if (counts[r.status] !== undefined) counts[r.status]++; });
+    return counts;
+  }, [searchResults]);
+
+  const filteredResults = useMemo(() => {
+    const filtered = searchResults.filter(res => {
+      const matchesCategory = activeCategoryTab === 'ALL' || res.category === activeCategoryTab;
+      const matchesSeverity = selectedSeverity === 'ALL' || res.severity === selectedSeverity;
+      const matchesStatus = selectedStatus === 'ALL' || res.status === selectedStatus;
+      const matchesAssignee = selectedAssignee === 'ALL' || res.assignee === selectedAssignee;
+      return matchesCategory && matchesSeverity && matchesStatus && matchesAssignee;
+    });
+    const getTime = r => r.detectedAtEpoch || 0;
+    const sorted = [...filtered];
+    if (sortBy === 'newest') sorted.sort((a, b) => getTime(b) - getTime(a));
+    else if (sortBy === 'oldest') sorted.sort((a, b) => getTime(a) - getTime(b));
+    else if (sortBy === 'riskHigh') sorted.sort((a, b) => b.riskScore - a.riskScore);
+    else if (sortBy === 'riskLow') sorted.sort((a, b) => a.riskScore - b.riskScore);
+    return sorted;
+  }, [searchResults, activeCategoryTab, selectedSeverity, selectedStatus, selectedAssignee, sortBy]);
+
+  const openCriticalCount = searchResults.filter(r => r.severity === 'Critical' && r.status !== 'Resolved').length;
+  const openCasesCount = searchResults.filter(r => r.status !== 'Resolved').length;
+  const avgRisk = Math.round(searchResults.reduce((a, r) => a + r.riskScore, 0) / (searchResults.length || 1));
+  const categoryChartData = CATEGORY_KEYS.map(k => ({ name: k, value: categoryCounts[k], color: CATEGORY_STYLES[k].chart }));
+
+  // Opens the constructed query on a real search engine in a new tab —
+  // genuinely free, no API, no key, can't be rate-limited or shut off by a
+  // vendor policy change. You do the searching; the app just hands you the
+  // query pre-built (including any dork operators/templates).
+  const handleOpenInBrowser = engine => {
+    const q = encodeURIComponent(constructedSearchQuery);
+    const urls = {
+      google: `https://www.google.com/search?q=${q}`,
+      bing: `https://www.bing.com/search?q=${q}`,
+      duckduckgo: `https://duckduckgo.com/?q=${q}`
+    };
+    window.open(urls[engine] || urls.google, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleApplyTemplate = template => {
+    setSearchInput(template);
+  };
+
+  const handleAddManualResult = () => {
+    if (!manualDraft.title.trim() || !manualDraft.url.trim()) return;
+    const severityRisk = { Critical: 90, High: 70, Medium: 50, Low: 25 };
+    const newResult = {
+      id: `RES-MANUAL-${Date.now()}`,
+      keywordMatched: constructedSearchQuery,
+      category: manualDraft.category,
+      severity: manualDraft.severity,
+      riskScore: severityRisk[manualDraft.severity] || 50,
+      confidence: 100,
+      source: manualDraft.source.trim() || 'Manually added',
+      sourceType: 'Web Search',
+      title: manualDraft.title.trim(),
+      snippet: manualDraft.snippet.trim(),
+      detectedAt: 'Just now',
+      detectedAtEpoch: Date.now(),
+      url: manualDraft.url.trim(),
+      status: 'New',
+      assignee: 'Unassigned',
+      tags: ['manual entry'],
+      notes: [],
+      isDemo: false
+    };
+    setSearchResults(prev => [newResult, ...prev]);
+    setManualDraft({ title: '', url: '', source: '', category: CATEGORY_KEYS[0], severity: 'Medium', snippet: '' });
+    setShowManualForm(false);
+  };
+
+  const handleAddTag = e => {
+    e.preventDefault();
+    if (newTagInput.trim() && !activeKeywordTags.includes(newTagInput.trim())) {
+      setActiveKeywordTags([...activeKeywordTags, newTagInput.trim()]);
+      setNewTagInput('');
+    }
+  };
+
+  const handleRemoveTag = tag => setActiveKeywordTags(activeKeywordTags.filter(t => t !== tag));
+
+  const handleSaveCurrentKeyword = () => {
+    const term = searchInput.trim() || activeKeywordTags.join(', ');
+    if (!term) return;
+    setSavedKeywords([{ id: `kw-${Date.now()}`, query: term, active: true, hitsToday: 1, category: activeCategoryTab === 'ALL' ? CATEGORY_KEYS[0] : activeCategoryTab, trend: [0, 0, 0, 0, 0, 1, 1] }, ...savedKeywords]);
+  };
+
+  const handleStatusChange = (id, newStatus) => {
+    setSearchResults(prev => prev.map(r => r.id === id ? { ...r, status: newStatus, notes: [...r.notes, { author: 'You', text: `Status moved to "${newStatus}".`, at: 'Just now' }] } : r));
+    setSelectedResult(prev => (prev && prev.id === id ? { ...prev, status: newStatus, notes: [...prev.notes, { author: 'You', text: `Status moved to "${newStatus}".`, at: 'Just now' }] } : prev));
+  };
+
+  const handleAssign = (id, assignee) => {
+    setSearchResults(prev => prev.map(r => (r.id === id ? { ...r, assignee } : r)));
+    setSelectedResult(prev => (prev && prev.id === id ? { ...prev, assignee } : prev));
+  };
+
+  const handleAddNote = id => {
+    if (!noteDraft.trim()) return;
+    const note = { author: 'You', text: noteDraft.trim(), at: 'Just now' };
+    setSearchResults(prev => prev.map(r => (r.id === id ? { ...r, notes: [...r.notes, note] } : r)));
+    setSelectedResult(prev => (prev && prev.id === id ? { ...prev, notes: [...prev.notes, note] } : prev));
+    setNoteDraft('');
+  };
+
+  const handleExportReport = () => {
+    const lines = [
+      `BEAST OSINT TEST — MONITORING LOG`,
+      `Generated: ${new Date().toISOString()}`,
+      `Filter: category=${activeCategoryTab} severity=${selectedSeverity} status=${selectedStatus} assignee=${selectedAssignee}`,
+      `Results: ${filteredResults.length}`, '',
+      ...filteredResults.map(r => `[${r.id}] ${r.severity.toUpperCase()} — ${r.title}\n  Category: ${r.category}\n  Source: ${r.source} (reliability ${SOURCE_RELIABILITY[r.sourceType] || 3}/5)\n  Matched: "${r.keywordMatched}"\n  Status: ${r.status} | Assignee: ${r.assignee}\n  URL: ${r.url}\n`)
+    ];
+    const blob = new Blob([lines.join('\n')], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `aegis-report-${Date.now()}.txt`;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans flex flex-col selection:bg-emerald-500 selection:text-slate-950">
+      <header className="border-b border-slate-700 bg-slate-800/90 backdrop-blur sticky top-0 z-40 px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center space-x-3">
+          <div className="relative bg-gradient-to-br from-emerald-500 to-teal-600 p-2 rounded-lg shadow-lg shadow-emerald-500/20">
+            <Radio className="w-5 h-5 text-slate-950 stroke-[2.5]" />
+          </div>
+          <div>
+            <div className="flex items-center space-x-2">
+              <h1 className="text-base font-bold tracking-tight text-slate-100">Beast OSINT Test</h1>
+              <span className="px-2 py-0.5 text-[10px] font-medium bg-slate-700 text-slate-400 border border-slate-600 rounded-full">No setup needed</span>
+            </div>
+            <p className="text-xs text-slate-400 hidden sm:block">Search the web for mentions, then keep a simple log of what you find</p>
+          </div>
+        </div>
+        <div className="flex items-center space-x-2">
+          <button onClick={handleExportReport} title="Download everything below as a text file" className="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg text-xs font-medium flex items-center space-x-1.5">
+            <Download className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Download log</span>
+          </button>
+          <button onClick={() => handleOpenInBrowser('google')} className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg text-xs flex items-center space-x-1.5 transition-colors">
+            <ExternalLink className="w-3.5 h-3.5" />
+            <span>Search in Google</span>
+          </button>
+        </div>
+      </header>
+
+      <div className="px-4 lg:px-6 pt-4 max-w-7xl mx-auto w-full space-y-3">
+        <div className="bg-slate-800/70 border border-slate-700 rounded-xl px-4 py-3 flex items-start space-x-2.5 text-xs text-slate-400">
+          <Globe className="w-4 h-4 shrink-0 mt-0.5 text-emerald-400" />
+          <p><span className="text-slate-300 font-medium">How this works:</span> type a name or company below, pick a ready-made search or write your own, then click a search engine button. When you find something worth tracking, click "Log a finding" to save it to the list underneath so the team can follow up.</p>
+        </div>
+        <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-4 py-2.5 flex items-center space-x-2.5 text-xs text-emerald-300">
+          <RefreshCw className="w-3.5 h-3.5 shrink-0" />
+          <span>SOURCES_CHECKED_PLACEHOLDER</span>
+        </div>
+      </div>
+
+      <main className="flex-1 px-4 lg:px-6 py-8 max-w-7xl mx-auto w-full space-y-8">
+        <section className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <KpiCard icon={ShieldAlert} label="Needs urgent attention" value={openCriticalCount} sub="Highest severity, not yet resolved" accent="bg-rose-950/70 text-rose-400" />
+          <KpiCard icon={History} label="Still open" value={openCasesCount} sub={`${statusCounts.Resolved} resolved so far`} accent="bg-slate-700 text-slate-300" />
+          <KpiCard icon={Gauge} label="Average risk score" value={`${avgRisk}/100`} sub="Across everything found so far" accent="bg-amber-950/70 text-amber-400" />
+          <KpiCard icon={Bookmark} label="Searches being watched" value={savedKeywords.filter(k => k.active).length} sub={`${savedKeywords.length} saved in total`} accent="bg-emerald-950/70 text-emerald-400" />
+        </section>
+
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 bg-slate-800/90 border border-slate-700 rounded-2xl p-6 space-y-5 shadow-xl">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xs font-bold text-slate-200 flex items-center space-x-2">
+                <Search className="w-4 h-4 text-emerald-400" />
+                <span>Build a search</span>
+              </h3>
+              <label className="flex items-center space-x-2 text-xs">
+                <span className="text-slate-400 hidden sm:inline">Narrow it to:</span>
+                <select value={dorkOperator} onChange={e => setDorkOperator(e.target.value)} title="Narrows your search to a specific kind of site" className="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-3 py-1.5 focus:outline-none focus:border-emerald-500">
+                  <option value="NONE">Everywhere (default)</option>
+                  <option value="PASTE">Leak/paste sites</option>
+                  <option value="FORUMS">Forums & social media</option>
+                  <option value="DOCS">Leaked documents</option>
+                  <option value="EXACT_PII">Exact personal info (address, SSN, etc.)</option>
+                  <option value="BRAND">Fake/impersonation pages</option>
+                </select>
+              </label>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {activeKeywordTags.map(tag => (
+                <span key={tag} className="flex items-center space-x-1.5 bg-slate-700 border border-slate-600 text-slate-200 text-xs px-2.5 py-1 rounded-full">
+                  <span>{tag}</span>
+                  <button onClick={() => handleRemoveTag(tag)} className="text-slate-400 hover:text-rose-400"><X className="w-3 h-3" /></button>
+                </span>
+              ))}
+              <form onSubmit={handleAddTag} className="flex items-center">
+                <input value={newTagInput} onChange={e => setNewTagInput(e.target.value)} placeholder="Add a name or company..." className="bg-slate-900 border border-dashed border-slate-600 text-xs text-slate-200 placeholder-slate-500 rounded-full px-3 py-1 w-44 focus:outline-none focus:border-emerald-500" />
+                <button type="submit" className="ml-1 text-emerald-400 hover:text-emerald-300"><PlusCircle className="w-4 h-4" /></button>
+              </form>
+            </div>
+            <div>
+              <p className="text-[10px] text-slate-400 mb-1.5">Quick-start searches — click one, then replace the {'{'}placeholders{'}'} below with the real name, company, or email:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {DORK_TEMPLATES.map(t => (
+                  <button key={t.label} onClick={() => handleApplyTemplate(t.query)} className="text-[10px] px-2.5 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-full border border-slate-600">
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="bg-slate-900 border border-slate-700 rounded-lg p-3 font-mono text-[11px] text-emerald-300 break-all">{constructedSearchQuery}</div>
+            <div className="flex items-center justify-between">
+              <input value={searchInput} onChange={e => setSearchInput(e.target.value)} placeholder="...or just type your own search here" className="flex-1 bg-slate-900 border border-slate-700 text-xs text-slate-200 placeholder-slate-500 rounded-lg px-3 py-2 mr-3 focus:outline-none focus:border-emerald-500" />
+              <button onClick={handleSaveCurrentKeyword} title="Keep an eye on this search going forward" className="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-medium rounded-lg flex items-center space-x-1.5 shrink-0">
+                <Bookmark className="w-3.5 h-3.5" /><span>Watch this search</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-2">
+              <button onClick={() => handleOpenInBrowser('google')} className="flex-1 px-3 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold rounded-lg flex items-center justify-center space-x-1.5">
+                <ExternalLink className="w-3.5 h-3.5" /><span>Google</span>
+              </button>
+              <button onClick={() => handleOpenInBrowser('bing')} className="flex-1 px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-medium rounded-lg flex items-center justify-center space-x-1.5">
+                <ExternalLink className="w-3.5 h-3.5" /><span>Bing</span>
+              </button>
+              <button onClick={() => handleOpenInBrowser('duckduckgo')} className="flex-1 px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-medium rounded-lg flex items-center justify-center space-x-1.5">
+                <ExternalLink className="w-3.5 h-3.5" /><span>DuckDuckGo</span>
+              </button>
+            </div>
+            <p className="text-[11px] text-slate-400 flex items-start space-x-1.5 pt-1">
+              <Globe className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+              <span>These buttons open your search in a new browser tab, using a real search engine — nothing here happens automatically. When you spot something worth tracking, come back and click "Log a finding" below to save it.</span>
+            </p>
+          </div>
+
+          <div className="space-y-8">
+          <div className="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 space-y-4 shadow-xl">
+            <h3 className="text-xs font-bold text-slate-200 flex items-center space-x-2">
+              <TrendingUp className="w-4 h-4 text-emerald-400" /><span>Findings over the last 14 days</span>
+            </h3>
+            <div className="h-32 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart data={TIMELINE_DATA} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
+                  <defs>
+                    <linearGradient id="hitsFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#34d399" stopOpacity={0.5} />
+                      <stop offset="100%" stopColor="#34d399" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid stroke="#334155" vertical={false} />
+                  <XAxis dataKey="day" hide />
+                  <YAxis tick={{ fontSize: 10, fill: '#64748b' }} width={24} />
+                  <Tooltip contentStyle={{ backgroundColor: '#1e293b', borderColor: '#475569', borderRadius: '8px', fontSize: '11px' }} />
+                  <Area type="monotone" dataKey="hits" stroke="#34d399" strokeWidth={2} fill="url(#hitsFill)" />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+            <p className="text-[11px] text-slate-400">How many new findings turned up each day, across everything you're watching.</p>
+          </div>
+
+          <div className="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 space-y-5 shadow-xl">
+            <h3 className="text-xs font-bold text-slate-200 flex items-center space-x-2 border-b border-slate-700 pb-3"><BarChart3 className="w-4 h-4 text-emerald-400" /><span>Findings by type</span></h3>
+            {searchResults.length === 0 ? (
+              <div className="h-48 flex flex-col items-center justify-center text-center text-slate-500 space-y-1">
+                <BarChart3 className="w-8 h-8 text-slate-600" />
+                <p className="text-xs">Nothing logged yet.</p>
+                <p className="text-[11px] text-slate-600">This fills in once you log some findings.</p>
+              </div>
+            ) : (
+              <>
+                <div className="h-48 w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                      <Pie data={categoryChartData} cx="50%" cy="50%" innerRadius={42} outerRadius={70} paddingAngle={4} dataKey="value">
+                        {categoryChartData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.color} />)}
+                      </Pie>
+                      <Tooltip contentStyle={{ backgroundColor: '#1e293b', borderColor: '#475569', borderRadius: '8px', fontSize: '11px' }} />
+                    </PieChart>
+                  </ResponsiveContainer>
+                </div>
+                <div className="grid grid-cols-1 gap-1.5 text-[11px] pt-2 border-t border-slate-700">
+                  {categoryChartData.map(item => (
+                    <div key={item.name} className="flex items-center space-x-1.5">
+                      <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: item.color }} />
+                      <span className="text-slate-400 truncate flex-1">{item.name}</span>
+                      <span className="font-mono font-bold text-slate-200">{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+          </div>
+        </section>
+
+        <section className="bg-slate-800/90 border border-slate-700 rounded-2xl overflow-hidden shadow-xl">
+          <div className="px-5 py-3.5 border-b border-slate-700 flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center space-x-2">
+              <Flame className="w-4 h-4 text-emerald-400" />
+              <h3 className="text-xs font-bold text-slate-200">Latest findings ({filteredResults.length})</h3>
+            </div>
+            <div className="flex items-center gap-2">
+              <select value={sortBy} onChange={e => setSortBy(e.target.value)} className="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-emerald-500">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="riskHigh">Highest risk first</option>
+                <option value="riskLow">Lowest risk first</option>
+              </select>
+              <select value={activeCategoryTab} onChange={e => setActiveCategoryTab(e.target.value)} className="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-emerald-500">
+                <option value="ALL">All categories</option>
+                {CATEGORY_KEYS.map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+              <select value={selectedSeverity} onChange={e => setSelectedSeverity(e.target.value)} className="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-emerald-500">
+                <option value="ALL">All ratings</option><option value="Critical">Critical</option><option value="High">High</option><option value="Medium">Medium</option><option value="Low">Low</option>
+              </select>
+              <button onClick={() => setShowManualForm(v => !v)} title="Manually add something you found yourself" className="text-[11px] px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 rounded-lg border border-emerald-500/30 flex items-center space-x-1">
+                <PlusCircle className="w-3.5 h-3.5" /><span>Log a finding</span>
+              </button>
+            </div>
+          </div>
+          {showManualForm && (
+            <div className="p-5 bg-slate-900 border-b border-dashed border-slate-600 space-y-2 text-xs">
+              <div className="grid grid-cols-2 gap-2">
+                <input value={manualDraft.title} onChange={e => setManualDraft({ ...manualDraft, title: e.target.value })} placeholder="What did you find? (short title)" className="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                <input value={manualDraft.url} onChange={e => setManualDraft({ ...manualDraft, url: e.target.value })} placeholder="Link to the page" className="bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+              </div>
+              <input value={manualDraft.source} onChange={e => setManualDraft({ ...manualDraft, source: e.target.value })} placeholder="Where did you find it?" className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+              <div className="grid grid-cols-2 gap-2">
+                <select value={manualDraft.category} onChange={e => setManualDraft({ ...manualDraft, category: e.target.value })} className="bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-emerald-500">
+                  {CATEGORY_KEYS.map(c => <option key={c} value={c}>{c}</option>)}
+                </select>
+                <select value={manualDraft.severity} onChange={e => setManualDraft({ ...manualDraft, severity: e.target.value })} className="bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-300 focus:outline-none focus:border-emerald-500">
+                  {['Low', 'Medium', 'High', 'Critical'].map(s => <option key={s} value={s}>{s}</option>)}
+                </select>
+              </div>
+              <button onClick={handleAddManualResult} className="w-full py-1.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold rounded-lg">Save this finding</button>
+            </div>
+          )}
+          {filteredResults.length === 0 ? (
+            <div className="p-12 text-center text-slate-400 space-y-2">
+              <ShieldCheck className="w-10 h-10 mx-auto text-slate-500" />
+              <p className="text-xs font-medium">Nothing here yet.</p>
+              <p className="text-[11px] text-slate-500">The next scheduled sweep will fill this in.</p>
+            </div>
+          ) : (
+            <div className="divide-y divide-slate-700/60">
+              {filteredResults.map(result => (
+                <div key={result.id} className="p-4 hover:bg-slate-700/20 transition-all flex flex-wrap items-start gap-3">
+                  <div className={`shrink-0 w-16 text-center px-2 py-1.5 rounded-lg border text-[11px] font-bold ${SEVERITY_STYLES[result.severity]}`} title="Rating — how serious this looks">
+                    <div>{result.severity.toUpperCase()}</div>
+                    <div className="font-mono text-[10px] opacity-80">{result.riskScore}/100</div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center flex-wrap gap-1.5 mb-1">
+                      <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded border ${CATEGORY_STYLES[result.category].text} ${CATEGORY_STYLES[result.category].softBg} ${CATEGORY_STYLES[result.category].border}`}>{result.category}</span>
+                      <span className="text-[10px] text-slate-500">{result.source}</span>
+                      <span className="text-[10px] text-slate-500 flex items-center"><Clock className="w-3 h-3 mr-0.5" />{result.detectedAt}</span>
+                    </div>
+                    <a href={result.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-100 hover:text-emerald-300 hover:underline flex items-center gap-1.5">
+                      <span>{result.title}</span><ExternalLink className="w-3.5 h-3.5 shrink-0 opacity-60" />
+                    </a>
+                    <p className="text-xs text-slate-400 mt-1 line-clamp-2">{result.snippet}</p>
+                  </div>
+                  <button onClick={() => setSelectedResult(result)} className="shrink-0 px-2.5 py-1 bg-slate-700/60 hover:bg-slate-700 text-slate-300 text-[11px] font-medium rounded border border-slate-600 flex items-center space-x-1">
+                    <Eye className="w-3 h-3" /><span>Details</span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      </main>
+
+      {selectedResult && (
+        <div className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-5">
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 space-y-5 shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div className="flex items-center justify-between border-b border-slate-700 pb-3">
+              <div className="flex items-center space-x-2"><ShieldAlert className="w-5 h-5 text-rose-500" /><span className="text-xs font-mono font-bold text-slate-300">Finding #{selectedResult.id}</span></div>
+              <button onClick={() => setSelectedResult(null)} className="text-slate-400 hover:text-slate-200"><X className="w-5 h-5" /></button>
+            </div>
+            <div className="space-y-4 text-xs">
+              <div>
+                <span className={`text-[10px] font-medium ${CATEGORY_STYLES[selectedResult.category].text}`}>{selectedResult.category}</span>
+                <h3 className="text-base font-bold text-slate-100">{selectedResult.title}</h3>
+              </div>
+              <div>
+                <p className="text-slate-400 mb-1.5">Where this stands — click a step to update it</p>
+                <StatusStepper status={selectedResult.status} onChange={s => handleStatusChange(selectedResult.id, s)} />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-slate-900 p-3 rounded-lg border border-slate-700 space-y-2 font-mono text-[11px]">
+                  <div className="flex justify-between"><span className="text-slate-400">Found via search:</span><span className="text-emerald-400 font-bold truncate ml-2">"{selectedResult.keywordMatched}"</span></div>
+                  <div className="flex justify-between"><span className="text-slate-400">Found on:</span><span className="text-slate-300">{selectedResult.source}</span></div>
+                  <div className="flex justify-between" title="How serious this looks, out of 100"><span className="text-slate-400">Risk score:</span><span className="text-rose-400 font-bold">{selectedResult.riskScore}/100</span></div>
+                  <div className="flex justify-between items-center" title="How trustworthy this type of source usually is"><span className="text-slate-400">Source trust:</span><div className="flex items-center space-x-1.5"><ReliabilityDots score={SOURCE_RELIABILITY[selectedResult.sourceType] || 3} /><span className="text-slate-400">{SOURCE_RELIABILITY[selectedResult.sourceType] || 3}/5</span></div></div>
+                </div>
+                <div className="bg-slate-900 p-3 rounded-lg border border-slate-700 space-y-2">
+                  <p className="text-slate-400 flex items-center"><Users className="w-3 h-3 mr-1" />Who's handling this</p>
+                  <select value={selectedResult.assignee} onChange={e => handleAssign(selectedResult.id, e.target.value)} className="w-full bg-slate-800 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-200 focus:outline-none focus:border-emerald-500">
+                    {TEAM.map(t => <option key={t} value={t}>{t}</option>)}
+                  </select>
+                  <p className="text-slate-400 flex items-center pt-1"><MapPin className="w-3 h-3 mr-1" />Tags</p>
+                  <div className="flex flex-wrap gap-1">
+                    {selectedResult.tags.map(t => <span key={t} className="text-[10px] bg-slate-800 border border-slate-700 text-slate-400 px-1.5 py-0.5 rounded">{t}</span>)}
+                  </div>
+                </div>
+              </div>
+              <div>
+                <span className="text-slate-400 font-semibold block mb-1">What was found</span>
+                <div className="bg-slate-900 p-3 rounded-lg border border-slate-700 text-slate-300 leading-relaxed text-xs max-h-32 overflow-y-auto">{selectedResult.snippet}</div>
+              </div>
+              <div>
+                <span className="text-slate-400 font-semibold flex items-center mb-1"><History className="w-3.5 h-3.5 mr-1.5" />Activity on this finding</span>
+                <div className="space-y-1.5 max-h-32 overflow-y-auto">
+                  {selectedResult.notes.length === 0 && <p className="text-slate-400 text-[11px]">No notes yet — add one below.</p>}
+                  {selectedResult.notes.map((n, i) => (
+                    <div key={i} className="bg-slate-900 border border-slate-700 rounded-lg p-2 text-[11px]">
+                      <div className="flex items-center justify-between text-slate-400"><span className="font-semibold text-slate-300">{n.author}</span><span>{n.at}</span></div>
+                      <p className="text-slate-400 mt-0.5">{n.text}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center space-x-2 mt-2">
+                  <input value={noteDraft} onChange={e => setNoteDraft(e.target.value)} placeholder="Add a note for the team..." className="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                  <button onClick={() => handleAddNote(selectedResult.id)} className="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg font-medium shrink-0">Add</button>
+                </div>
+              </div>
+            </div>
+            <div className="pt-3 border-t border-slate-700 flex flex-wrap items-center justify-between gap-4">
+              <a href={selectedResult.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg text-xs font-medium flex items-center space-x-1"><span>Open the page</span><ExternalLink className="w-3.5 h-3.5" /></a>
+              <div className="flex space-x-2">
+                <button onClick={() => { navigator.clipboard.writeText(`TAKEDOWN REQUEST FOR: ${selectedResult.url}\nMATCHED KEYWORD: ${selectedResult.keywordMatched}\nCONTENT: ${selectedResult.snippet}`); setCopyFeedback(true); setTimeout(() => setCopyFeedback(false), 2500); }} title="Copies a pre-written removal request you can paste into an email or web form" className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg text-xs flex items-center space-x-1">
+                  <FileText className="w-3.5 h-3.5" /><span>{copyFeedback ? 'Copied!' : 'Copy removal request'}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+const __root = ReactDOM.createRoot(document.getElementById('root'));
+__root.render(React.createElement(App));
+
+</script>
+
+<script>
+  try {
+    var code = document.getElementById('app-source').textContent;
+    var transformed = Babel.transform(code, { presets: ['react'] }).code;
+    var script = document.createElement('script');
+    script.textContent = transformed;
+    document.body.appendChild(script);
+  } catch (err) {
+    document.getElementById('root').innerHTML =
+      '<div style="color:#f87171;padding:2rem;font-family:sans-serif;">Failed to start the app: ' + (err && err.message ? err.message : err) + '</div>';
+    console.error(err);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "_comment": "Edit the lists below. No code knowledge needed — just keep the quotes and commas.",
+
+  "watch_terms": [
+    "MrBeast",
+    "Jimmy Donaldson",
+    "Feastables",
+    "Beast Industries",
+    "Beast Games",
+    "Beast Philanthropy",
+    "MrBeast Burger",
+    "MrBeast Productions"
+  ],
+
+  "risk_modifiers": [
+    "scam",
+    "fraud",
+    "boycott",
+    "lawsuit",
+    "class action",
+    "exposed",
+    "hacked",
+    "leak",
+    "disgruntled",
+    "walkout",
+    "strike",
+    "harassment",
+    "unsafe",
+    "osha",
+    "injury",
+    "fired",
+    "whistleblower",
+    "assault",
+    "threat"
+  ],
+
+  "results_per_query": 8
+}
