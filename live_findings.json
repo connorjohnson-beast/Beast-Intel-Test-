@@ -1,50 +1,6 @@
 [
   {
-    "id": "RES-LIVE-1790337870",
-    "keywordMatched": "Beast Industries",
-    "category": "Threats & Security Risks",
-    "severity": "Critical",
-    "riskScore": 92,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast tries to cut down on his massive spending without killing the magic",
-    "snippet": "You're currently following this author! Click to unsubscribe from email alerts. MrBeast won the battle for attention. His next challenge: turning a profit. The 27-year-old became the world's top ...",
-    "detectedAt": "394 days ago",
-    "detectedAtEpoch": 1756277160000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663292a2c4734ba2fccf47eaf1af1&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-beast-industries-business-profit-strategy-2025-8&c=16576393673394247213&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337839",
-    "keywordMatched": "MrBeast",
-    "category": "Operational & Financial Intel",
-    "severity": "High",
-    "riskScore": 74,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast sues his food delivery partner over \u2018low quality\u2019 food",
-    "snippet": "YouTube star Jimmy Donaldson, known to his 172 million subscribers as MrBeast, filed a lawsuit on Monday against his food delivery service partner, Virtual Dining Concepts, claiming the company ...",
-    "detectedAt": "1151 days ago",
-    "detectedAtEpoch": 1690822140000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.nbcnews.com%2fbusiness%2fmrbeast-lawsuit-mrbeast-burger-virtual-dining-concepts-rcna97396&c=1408956084398137931&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337840",
+    "id": "RES-LIVE-1790359405",
     "keywordMatched": "MrBeast",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -56,7 +12,7 @@
     "snippet": "One of the world's best-known online personalities is facing a lawsuit. Jimmy Donaldson, better known as \"MrBeast,\" is a 26-year-old YouTube star with more than 300 million subscribers. He's built an ...",
     "detectedAt": "736 days ago",
     "detectedAtEpoch": 1726739460000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.cbsnews.com%2fnews%2fmrbeast-sued-contestants-youtuber-amazon-studios%2f&c=17423981115939716341&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.cbsnews.com%2fnews%2fmrbeast-sued-contestants-youtuber-amazon-studios%2f&c=17423981115939716341&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -66,7 +22,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337841",
+    "id": "RES-LIVE-1790359406",
+    "keywordMatched": "MrBeast",
+    "category": "Operational & Financial Intel",
+    "severity": "High",
+    "riskScore": 74,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast sues his food delivery partner over \u2018low quality\u2019 food",
+    "snippet": "YouTube star Jimmy Donaldson, known to his 172 million subscribers as MrBeast, filed a lawsuit on Monday against his food delivery service partner, Virtual Dining Concepts, claiming the company ...",
+    "detectedAt": "1152 days ago",
+    "detectedAtEpoch": 1690822140000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.nbcnews.com%2fbusiness%2fmrbeast-lawsuit-mrbeast-burger-virtual-dining-concepts-rcna97396&c=1408956084398137931&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359407",
     "keywordMatched": "MrBeast",
     "category": "Impersonation & Brand Abuse",
     "severity": "High",
@@ -76,9 +54,9 @@
     "sourceType": "Bing News",
     "title": "How an AI deepfake ad of MrBeast ended up on TikTok",
     "snippet": "AI deepfakes are getting so good that a fraudulent MrBeast ad slipped past TikTok\u2019s ad moderation technology to end up on the platform. In the ad, the massively influential creator appeared to be ...",
-    "detectedAt": "1087 days ago",
+    "detectedAt": "1088 days ago",
     "detectedAtEpoch": 1696339620000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2ftechcrunch.com%2f2023%2f10%2f03%2fhow-an-ai-deepfake-ad-of-mrbeast-ended-up-on-tiktok%2f&c=11986500292244922462&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2ftechcrunch.com%2f2023%2f10%2f03%2fhow-an-ai-deepfake-ad-of-mrbeast-ended-up-on-tiktok%2f&c=11986500292244922462&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -88,7 +66,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337842",
+    "id": "RES-LIVE-1790359408",
     "keywordMatched": "MrBeast",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -100,7 +78,7 @@
     "snippet": "Contestants on MrBeast\u2019s upcoming competition series have sued the popular YouTube star\u2019s production company and Amazon for sexual harassment, failure to pay minimum wages and negligent infliction of ...",
     "detectedAt": "737 days ago",
     "detectedAtEpoch": 1726656300000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.latimes.com%2fentertainment-arts%2fbusiness%2fstory%2f2024-09-18%2fmrbeast-lawsuit-beast-games-amazon&c=6163510870868741614&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.latimes.com%2fentertainment-arts%2fbusiness%2fstory%2f2024-09-18%2fmrbeast-lawsuit-beast-games-amazon&c=6163510870868741614&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -110,7 +88,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337857",
+    "id": "RES-LIVE-1790359425",
     "keywordMatched": "Feastables",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -122,7 +100,7 @@
     "snippet": "Add Yahoo as a preferred source to see more of our stories on Google. MrBeast, whose real name is Jimmy Donaldson, launched Feastables to sell chocolate in 2022.Feastables A nut company called Dee's ...",
     "detectedAt": "1117 days ago",
     "detectedAtEpoch": 1693765500000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fwww.yahoo.com%2fnews%2fwant-deez-nuts-dees-nuts-012545133.html&c=9428397812270029703&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.yahoo.com%2fnews%2fwant-deez-nuts-dees-nuts-012545133.html&c=9428397812270029703&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -132,7 +110,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337869",
+    "id": "RES-LIVE-1790359438",
     "keywordMatched": "Beast Industries",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -142,9 +120,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast\u2019s Beast Industries Sued by Former Employee Alleging Sexual Harassment and Retaliation; Company Says Suit Is Based on \u2018Categorically False Statements\u2019",
     "snippet": "The media company led by MrBeast, the YouTube megastar whose real name is Jimmy Donaldson, has been sued by a former employee, who alleges she was subjected to years of sexual harassment, gender bias ...",
-    "detectedAt": "155 days ago",
+    "detectedAt": "156 days ago",
     "detectedAtEpoch": 1776861960000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663292a2c4734ba2fccf47eaf1af1&url=https%3a%2f%2fvariety.com%2f2026%2fdigital%2fnews%2fmrbeast-sued-former-employee-sexual-harassment-retaliation-1236728069%2f&c=3645467069119365314&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b769e68242988ad0156ad9e7257d&url=https%3a%2f%2fvariety.com%2f2026%2fdigital%2fnews%2fmrbeast-sued-former-employee-sexual-harassment-retaliation-1236728069%2f&c=3645467069119365314&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -154,7 +132,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337887",
+    "id": "RES-LIVE-1790359458",
     "keywordMatched": "Beast Games",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -166,7 +144,7 @@
     "snippet": "The contestants in the internet star\u2019s \u201cBeast Games\u201d expected outlandish challenges and signed contracts that acknowledged risks of serious injury and death. Still, few were prepared for the ...",
     "detectedAt": "784 days ago",
     "detectedAtEpoch": 1722564180000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.nytimes.com%2f2024%2f08%2f02%2fstyle%2fmrbeast-beast-games-competition-show.html&c=13929974219262689909&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.nytimes.com%2f2024%2f08%2f02%2fstyle%2fmrbeast-beast-games-competition-show.html&c=13929974219262689909&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -176,7 +154,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337907",
+    "id": "RES-LIVE-1790359479",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -186,9 +164,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast\u2019s production company sued for sexual harassment",
     "snippet": "Beast Industries by James \u201cJimmy\u201d Donaldson (aka MrBeast) has been accused of sexual harassment and gender bias at the workplace by a former employee. A lack of firm guidelines and worker protections ...",
-    "detectedAt": "150 days ago",
+    "detectedAt": "151 days ago",
     "detectedAtEpoch": 1777292940000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fmrbeast-s-production-company-sued-for-sexual-harassment%2far-AA21Q6iv&c=12570024082165680808&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fmrbeast-s-production-company-sued-for-sexual-harassment%2far-AA21Q6iv&c=12570024082165680808&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -198,7 +176,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337908",
+    "id": "RES-LIVE-1790359480",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -208,9 +186,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast\u2019s production company accused of toxic workplace and sexual harassment by former employee",
     "snippet": "The former head of Instagram for MrBeast's production company claims she was wrongfully terminated after she complained about unwanted sexual comments and lost her job following her maternity leave \u2014 ...",
-    "detectedAt": "155 days ago",
+    "detectedAt": "156 days ago",
     "detectedAtEpoch": 1776861960000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmrbeast-production-company-accused-toxic-193255574.html&c=240159043896111626&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmrbeast-production-company-accused-toxic-193255574.html&c=240159043896111626&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -220,7 +198,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337910",
+    "id": "RES-LIVE-1790359481",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -230,9 +208,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast Production Companies Sued Over Alleged Sexual Harassment, Emotional Distress",
     "snippet": "MrBeastYouTube and GameChanger 24/7, two production companies owned by YouTube star MrBeast, have been sued by a former employee, Lorrayne Mavromatis, who alleges having experienced sexual harassment, ...",
-    "detectedAt": "155 days ago",
+    "detectedAt": "156 days ago",
     "detectedAtEpoch": 1776871680000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmrbeast-production-companies-sued-over-222835716.html&c=2141127794939172493&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmrbeast-production-companies-sued-over-222835716.html&c=2141127794939172493&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -242,7 +220,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337911",
+    "id": "RES-LIVE-1790359483",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "High",
@@ -252,9 +230,9 @@
     "sourceType": "Bing News",
     "title": "Woman sues YouTube star\u2019s company over sexual harassment claims",
     "snippet": "A woman has filed a lawsuit against the production company operated by MrBeast, YouTube\u2019s most popular content creator, saying she endured years of sexual harassment and was fired after returning from ...",
-    "detectedAt": "155 days ago",
+    "detectedAt": "156 days ago",
     "detectedAtEpoch": 1776877920000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.cleveland.com%2fnation%2f2026%2f04%2fwoman-sues-youtube-stars-company-over-sexual-harassment-claims.html&c=7532599480280299167&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.cleveland.com%2fnation%2f2026%2f04%2fwoman-sues-youtube-stars-company-over-sexual-harassment-claims.html&c=7532599480280299167&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -264,7 +242,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337843",
+    "id": "RES-LIVE-1790359409",
     "keywordMatched": "MrBeast",
     "category": "Operational & Financial Intel",
     "severity": "Medium",
@@ -276,7 +254,7 @@
     "snippet": "Add Yahoo as a preferred source to see more of our stories on Google. Credits: @mrbeast on Instagram Many people are curious about the recent controversy involving MrBeast and whether he fired Ava ...",
     "detectedAt": "791 days ago",
     "detectedAtEpoch": 1721977260000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmrbeast-ava-kris-tyson-fired-140124432.html&c=9641574153358285188&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmrbeast-ava-kris-tyson-fired-140124432.html&c=9641574153358285188&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -286,7 +264,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337853",
+    "id": "RES-LIVE-1790359420",
     "keywordMatched": "Feastables",
     "category": "Operational & Financial Intel",
     "severity": "Medium",
@@ -298,7 +276,7 @@
     "snippet": "Popular YouTube creator Jimmy \"MrBeast\" and his chocolate-making company Feastables seem to have excluded Minecraft creator George \"GeorgeNotFound\" from a recent brand collaboration involving the ...",
     "detectedAt": "923 days ago",
     "detectedAtEpoch": 1710548700000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fwww.sportskeeda.com%2fesports%2fnews-mrbeast-seemingly-removes-georgenotfound-feastables-collaboration-post-instagram-following-recent-controversy&c=16996435479054712896&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.sportskeeda.com%2fesports%2fnews-mrbeast-seemingly-removes-georgenotfound-feastables-collaboration-post-instagram-following-recent-controversy&c=16996435479054712896&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -308,7 +286,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337877",
+    "id": "RES-LIVE-1790359448",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Medium",
@@ -320,7 +298,7 @@
     "snippet": "Michael Block is a 14 time GLAM Award nominated writer, producer, and host of the podcast Block Talk. Throughout his time in the entertainment industry, he has worked on and off Broadway as a stage ...",
     "detectedAt": "581 days ago",
     "detectedAtEpoch": 1740102300000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fcollider.com%2fbeast-games-season-2%2f&c=8325858954272186819&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fcollider.com%2fbeast-games-season-2%2f&c=8325858954272186819&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -330,7 +308,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337885",
+    "id": "RES-LIVE-1790359456",
     "keywordMatched": "Beast Games",
     "category": "Operational & Financial Intel",
     "severity": "Medium",
@@ -340,9 +318,9 @@
     "sourceType": "Bing News",
     "title": "'Beast Games' partnership with fintech company MoneyLion stirs controversy: Here's why",
     "snippet": "Following the highly-anticipated release of \"Beast Games,\" a consumer advocate is expressing concern about the show's partnership with a financial tech company. The first two episodes of \"Beast Games, ...",
-    "detectedAt": "643 days ago",
+    "detectedAt": "644 days ago",
     "detectedAtEpoch": 1734710280000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2ftv%2f2024%2f12%2f20%2fbeast-games-mrbeast-moneylion%2f77104803007%2f&c=16545066571426537236&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2ftv%2f2024%2f12%2f20%2fbeast-games-mrbeast-moneylion%2f77104803007%2f&c=16545066571426537236&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -352,7 +330,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337893",
+    "id": "RES-LIVE-1790359465",
     "keywordMatched": "Beast Philanthropy",
     "category": "Negativity & Defamation",
     "severity": "Medium",
@@ -364,7 +342,7 @@
     "snippet": "YouTuber and philanthropist MrBeast has hit back at online criticism after spending nearly $10 million on a newly built village in Ghana. The ambitious project, unveiled in a recent video, was ...",
     "detectedAt": "2 days ago",
     "detectedAtEpoch": 1790122243000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-hits-back-at-backlash-over-10-million-ghana-village-project%2far-AA2cN7Ge&c=1285320317444500018&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-hits-back-at-backlash-over-10-million-ghana-village-project%2far-AA2cN7Ge&c=1285320317444500018&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -374,7 +352,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337906",
+    "id": "RES-LIVE-1790359478",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "Medium",
@@ -386,7 +364,7 @@
     "snippet": "You're currently following this author! Click to unsubscribe from email alerts. There's one word that strikes terror in the heart of a creative working on a MrBeast ...",
     "detectedAt": "407 days ago",
     "detectedAtEpoch": 1755163740000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-how-production-team-makes-youtube-videos-2025-8&c=15433670689327287511&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-how-production-team-makes-youtube-videos-2025-8&c=15433670689327287511&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -396,29 +374,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337826",
-    "keywordMatched": "MrBeast",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "NDTV",
-    "sourceType": "Google News",
-    "title": "YouTuber MrBeast Visits Taj Mahal With Wife, Enjoys View Of Iconic Monument - NDTV",
-    "snippet": "YouTuber MrBeast Visits Taj Mahal With Wife, Enjoys View Of Iconic Monument&nbsp;&nbsp;NDTV",
-    "detectedAt": "2 hours ago",
-    "detectedAtEpoch": 1790327978000,
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQmxtek5mWXhKRm5GZjBPVDhncW56QkZHa2lQYnR2czhEUmVxVUlJUXJ5OTJWM3QzNS1IZTZIMGlZLWRlQXBzLVRLT3hEeFBEd3JfdTltT2ppRmVhemxmQnM1Tzl5cHlNaFpKMTdaZUpDZGpyZWlBNU9jd1NSVzNDbmJQV0FXY0FmWjdVMmNMSFV1dXVVM0plZFJNY3ZWVW1hU0VmZlZkZlpEOHB2UGJr0gG3AUFVX3lxTFAtaXFmWHl0b2ZMRHN5QkQxMnJxT1B0cEt3bjE0cVY4MDBRem1HdUJnQUNmRjJYd3VMLVdSbWQ4bENZNTByR0tkS3ZYUXR2QUdUNHE5UWZWNlZUZHdMZHhDZGRRVnRzMmdFNGNLaE8zRzV2QmlITmxJcEhnV0Z5bVdmUk9DYVRIbmxaX3V1UlljYXIxVHc1TEJhQVloRkRDLUM0aUZLQVIwakdrakVuLThWNUtZdVRkWQ?oc=5",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337827",
+    "id": "RES-LIVE-1790359393",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -426,11 +382,11 @@
     "confidence": 70,
     "source": "Yahoo",
     "sourceType": "Google News",
-    "title": "Martha Stewart Reveals Her Verdict On MrBeast After Spending Three Days Together - Yahoo",
-    "snippet": "Martha Stewart Reveals Her Verdict On MrBeast After Spending Three Days Together&nbsp;&nbsp;Yahoo",
-    "detectedAt": "17 hours ago",
-    "detectedAtEpoch": 1790274000000,
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRDVDbVByMzhnMU54SWE0ZlpqVXA4Vmw4amVNMHlyMlZhQkczM1REbGhjcDhadUZILU1wNmR5MjE5VjlLeUNQMzRNcUdLcjZhS0Nsd1hiM1A5cVpsSjJtSUV3aGZjVnBCdF8tX00xaS00ZzdUSTM1Y08zUjJhRkpiZWZpTWY0QWM3S0JNMGJTanRvTXh6cmZhT25MNkQ2b0lwYV8wNHVWWQ?oc=5",
+    "title": "Martha Stewart Spent 3 Days With MrBeast & Came Away With a Verdict - Yahoo",
+    "snippet": "Martha Stewart Spent 3 Days With MrBeast & Came Away With a Verdict&nbsp;&nbsp;Yahoo",
+    "detectedAt": "1 hour ago",
+    "detectedAtEpoch": 1790352814000,
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS09MaktNOVFCTENfazJWMXdNTEdKNXhYeldPNWxZXzk0SGN5Q083cmFXN1N2dGx4WmRPd1NIV3lhVzVrc3Fzajlrdy1TRXU5a29mRWdwMWtUaUE0ZTd4MUs0M1lsM3V4M0ZaY0gzeXJZeFFzTFdMdzEyMGpNbHhwTnJmQWNjTE5NRExTVWlmVWxXMVdBNnZFOXRsejhEUQ?oc=5",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -440,19 +396,19 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337828",
+    "id": "RES-LIVE-1790359394",
     "keywordMatched": "MrBeast",
-    "category": "Negativity & Defamation",
+    "category": "Operational & Financial Intel",
     "severity": "Low",
     "riskScore": 28,
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "YouTuber MrBeast visits Taj Mahal with wife, enjoys view of iconic monument",
-    "snippet": "His visit became a notable moment for the fans and tourists who were present at the historic monument.",
-    "detectedAt": "9 hours ago",
-    "detectedAtEpoch": 1790304038000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fyoutuber-mrbeast-visits-taj-mahal-with-wife-enjoys-view-of-iconic-monument%2far-AA2cWgSI&c=4214931387124696767&mkt=en-us",
+    "title": "MrBeast's $10 million Ghana village: He says the video won't do well",
+    "snippet": "MrBeast spent eight months and about $10 million building a village in Abna Dakwa, Ghana, to keep kids out of illegal labor.",
+    "detectedAt": "7 hours ago",
+    "detectedAtEpoch": 1790332189000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.msn.com%2fen-us%2fentertainment%2fgeneral%2fmrbeast-s-10-million-ghana-village-he-says-the-video-won-t-do-well%2far-AA2cYXS0&c=1302860926007318084&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -462,7 +418,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337829",
+    "id": "RES-LIVE-1790359395",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -470,11 +426,33 @@
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "MrBeast visits Taj Mahal with wife ahead of chat with Ramayana stars",
-    "snippet": "YouTube sensation MrBeast was spotted at the Taj Mahal in Agra on Thursday with his wife Thea Booysen. The YouTuber, whose real name is Jimmy Donaldson, drew large crowds of tourists and fans. Now, a ...",
+    "title": "MrBeast visits Taj Mahal with wife in Agra, young fan gives him handmade sketchbook",
+    "snippet": "MrBeast visited the Taj Mahal in Agra with his wife, Thea Booysen and met fans gathered around them. A young fan's handmade sketchbook stood out as the creator filmed at the monument with prior ...",
+    "detectedAt": "12 hours ago",
+    "detectedAtEpoch": 1790315497000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-visits-taj-mahal-with-wife-in-agra-young-fan-gives-him-handmade-sketchbook%2far-AA2cXoQU&c=10219750408853465199&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359396",
+    "keywordMatched": "MrBeast",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Martha Stewart Spent 3 Days With MrBeast & Came Away With a Verdict",
+    "snippet": "Martha Stewart shared her views after spending three days with MrBeast. Stewart opened up about the successful influencer and his massive global reach. She was curious about how a YouTuber has such ...",
     "detectedAt": "8 hours ago",
-    "detectedAtEpoch": 1790307724000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-visits-taj-mahal-with-wife-ahead-of-chat-with-ramayana-stars%2far-AA2cWBtE&c=5400280014311741767&mkt=en-us",
+    "detectedAtEpoch": 1790327460000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmartha-stewart-spent-3-days-161153083.html&c=5027375962003711196&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -484,7 +462,51 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337830",
+    "id": "RES-LIVE-1790359397",
+    "keywordMatched": "MrBeast",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Martha Stewart Reveals Her Verdict On MrBeast After Spending Three Days Together",
+    "snippet": "Martha Stewart may be considered one of the original influencers, but even she initially had questions about MrBeast.",
+    "detectedAt": "1 day ago",
+    "detectedAtEpoch": 1790248800000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2ftheblast.com%2f856189%2fmartha-stewart-reveals-verdict-mrbeast-spending-three-days-together%2f&c=5439318962364909872&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359398",
+    "keywordMatched": "MrBeast",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Why 'Ramayana' makers have roped in MrBeast to promote film",
+    "snippet": "The makers of Ramayana are teaming up with YouTube sensation MrBeast for a groundbreaking promotional event, featuring stars like Ranbir Kapoor and Sai Pallavi.",
+    "detectedAt": "7 hours ago",
+    "detectedAtEpoch": 1790331960000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.newsbytesapp.com%2fnews%2fentertainment%2framayana-x-mrbeast-a-unique-collaboration%2fstory&c=6648467487059286073&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359399",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -496,7 +518,7 @@
     "snippet": "The popular YouTuber MrBeast spent months building a village in Ghana, including a school, a community center, houses for teachers and more.",
     "detectedAt": "2 days ago",
     "detectedAtEpoch": 1790146500000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2finternet-culture%2fcreators-influencers%2f2026%2f09%2f23%2fmrbeast-ghana-town-10-million-chocolate-backlash%2f91887345007%2f&c=10540244101430631021&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2finternet-culture%2fcreators-influencers%2f2026%2f09%2f23%2fmrbeast-ghana-town-10-million-chocolate-backlash%2f91887345007%2f&c=10540244101430631021&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -506,7 +528,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337831",
+    "id": "RES-LIVE-1790359400",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -516,9 +538,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast\u2019s Taj Mahal Visit Leaves Tourists Curious: What Is The YouTuber Doing In Agra?",
     "snippet": "MrBeast visited the Taj Mahal in Agra with his wife, Thea Booysen, during their India trip. The YouTuber explored the monument, posed with tourists, and met a young fan, Yuvan Gaurav.",
-    "detectedAt": "19 hours ago",
+    "detectedAt": "1 day ago",
     "detectedAtEpoch": 1790269200000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fnews.abplive.com%2fentertainment%2fcelebrities%2fmrbeast-s-taj-mahal-visit-leaves-tourists-curious-what-is-the-youtuber-doing-in-agra-1868260&c=14745171909838630265&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fnews.abplive.com%2fentertainment%2fcelebrities%2fmrbeast-s-taj-mahal-visit-leaves-tourists-curious-what-is-the-youtuber-doing-in-agra-1868260&c=14745171909838630265&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -528,7 +550,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337832",
+    "id": "RES-LIVE-1790359401",
     "keywordMatched": "MrBeast",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -540,7 +562,7 @@
     "snippet": "Sources confirm there are active talks around film rights for the mystery thriller, titled 'The Most Dangerous Games.' ...",
     "detectedAt": "16 days ago",
     "detectedAtEpoch": 1788949980000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.hollywoodreporter.com%2flifestyle%2flifestyle-news%2fmrbeast-james-patterson-novel-debut-nyt-bestseller-list-1236696027%2f&c=10879713848337872406&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76163fb4b2b84f2fb4949a45a6e&url=https%3a%2f%2fwww.hollywoodreporter.com%2flifestyle%2flifestyle-news%2fmrbeast-james-patterson-novel-debut-nyt-bestseller-list-1236696027%2f&c=10879713848337872406&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -550,73 +572,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337833",
-    "keywordMatched": "MrBeast",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "The billionaire YouTuber MrBeast claims that he spent $10 million building a village in Ghana.",
-    "snippet": "The project replaces a school without doors or windows that was attended by more than 300 children. It also includes drainage, solar panels, and a community farm.",
-    "detectedAt": "1 day ago",
-    "detectedAtEpoch": 1790237280000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.marca.com%2fen%2flifestyle%2fcelebrities%2f2026%2f09%2f24%2fthe-billionaire-youtuber-mrbeast-claims-that-he-spent-10-million-building-village-in-ghana.html&c=7884689587121559365&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337834",
-    "keywordMatched": "MrBeast",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast's new challenge: convincing fans to buy his first book",
-    "snippet": "MrBeast is taking on book publishing as a new venture. On Tuesday, he released a novel with James Patterson.",
-    "detectedAt": "24 days ago",
-    "detectedAtEpoch": 1788231900000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-next-stunt-is-convincing-fans-to-read-his-book-2026-9&c=10208006639764422784&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337835",
-    "keywordMatched": "MrBeast",
-    "category": "Operational & Financial Intel",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "\u20182 YouTubers\u2019: Erling Haaland appears to tease collaboration with MrBeast",
-    "snippet": "Soccer star Erling Haaland looks set to feature in a YouTube video alongside MrBeast. Haaland became a very popular figure on social media over the summer during the 2026 World Cup.",
-    "detectedAt": "6 days ago",
-    "detectedAtEpoch": 1789788600000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663221baf49ca831f687a23f90667&url=https%3a%2f%2fsports.yahoo.com%2farticles%2f2-youtubers-erling-haaland-appears-103000648.html&c=11040202739891647854&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337836",
+    "id": "RES-LIVE-1790359402",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -628,7 +584,7 @@
     "snippet": "MrBeast Burger is at the center of a bitter legal battle between Jimmy Donaldson and his business partner, Virtual Dining Concepts.",
     "detectedAt": "245 days ago",
     "detectedAtEpoch": 1769132100000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -638,7 +594,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337837",
+    "id": "RES-LIVE-1790359403",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -650,7 +606,7 @@
     "snippet": "MrBeast's reliance on its founder Jimmy Donaldson has caused concern among insiders and investors as the company expands and mulls an IPO.",
     "detectedAt": "23 days ago",
     "detectedAtEpoch": 1788318060000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-biggest-risk-5-billion-empire-is-reliance-on-himself-2026-9&c=11568530726997776294&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-biggest-risk-5-billion-empire-is-reliance-on-himself-2026-9&c=11568530726997776294&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -660,7 +616,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337838",
+    "id": "RES-LIVE-1790359404",
     "keywordMatched": "MrBeast",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -672,7 +628,7 @@
     "snippet": "Time to go into Beast mode. MrBeast, who runs YouTube\u2019s most popular account with 307 million subscribers, has recently found himself under fire. Best known for his family-friendly videos and ...",
     "detectedAt": "785 days ago",
     "detectedAtEpoch": 1722501600000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632344c94286935fef0e4a8a2130&url=https%3a%2f%2fnypost.com%2f2024%2f08%2f01%2fentertainment%2fcan-mrbeast-spin-his-way-out-of-crisis-at-his-nice-guy-empire%2f&c=17776333566180671195&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76266af462e905e49f278cea1c3&url=https%3a%2f%2fnypost.com%2f2024%2f08%2f01%2fentertainment%2fcan-mrbeast-spin-his-way-out-of-crisis-at-his-nice-guy-empire%2f&c=17776333566180671195&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -682,29 +638,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337844",
-    "keywordMatched": "Jimmy Donaldson",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "IndulgExpress",
-    "sourceType": "Google News",
-    "title": "MrBeast visits Taj Mahal with wife ahead of chat with Ramayana stars - IndulgExpress",
-    "snippet": "MrBeast visits Taj Mahal with wife ahead of chat with Ramayana stars&nbsp;&nbsp;IndulgExpress",
-    "detectedAt": "1 hour ago",
-    "detectedAtEpoch": 1790332924000,
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2dfX0U0Wm43LU1mVU9YUUQyZld0ZHZ4dER2ZTh6R0NBdWJiWEdkQlBPb1VGWE9adDYweThXaTVFekZLQXVfaGdDVnVhR0VwSjUwSm9XTHd1NFpnTElLbXVkYWNXa0ZLaUxoUzhUZjRyR3cxZHpZY1ZYNlJRbHgwSUhEMG85ZTJLRGVMLS1PdmFwSVBKOU1LREtGd2o0WFVvdUxuZ3o3c2stX250X3EtVWpaZk5qYy1rcEhHZkVHQ1ZuZ9IBzwFBVV95cUxPRDhqMUI2UXktQ1VZbGFxNjYxVzJfXzcyUkZBQ2V3Umd6U2tXZ2dCeXk5a3pWdWdMSlBZczI3QUU2czBKVU55dDV0RURPTDBmR3Jyb2U0Q2ctYU5hSGJtMGpPUTlvanROQTVoT21aYmpudFBNTUI1dWVVdmU5M1JGclMtUWlyNjh3eXZOcXBzdFIxWDBUbFhrdVNpVWFIVHlkb2gwTk9WTzhLMlBtOHl5d1F5bHRNdnIyWGQ1MjZwY3lKYXRRc0ZrU0NXZ1VjSmc?oc=5",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337845",
+    "id": "RES-LIVE-1790359410",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -714,9 +648,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast spends $10 million building village in Ghana, says he'll do it even if no one watches",
     "snippet": "The project exposed millions of younger viewers to a model of giving centered on community support.",
-    "detectedAt": "15 hours ago",
+    "detectedAt": "21 hours ago",
     "detectedAtEpoch": 1790283420000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fmrbeast-spends-10-million-building-village-in-ghana-says-hell-do-it-even-if-no-one-watches%2far-AA2cVyb7&c=14365309139060648546&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fmrbeast-spends-10-million-building-village-in-ghana-says-hell-do-it-even-if-no-one-watches%2far-AA2cVyb7&c=14365309139060648546&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -726,7 +660,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337846",
+    "id": "RES-LIVE-1790359411",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -736,9 +670,9 @@
     "sourceType": "Bing News",
     "title": "Inside MrBeast's $5 Billion Generosity Machine \u2014 and the Hidden Costs Behind It",
     "snippet": "The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for ...",
-    "detectedAt": "361 days ago",
+    "detectedAt": "362 days ago",
     "detectedAtEpoch": 1759061460000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2finside-mrbeasts-5-billion-generosity-191138270.html&c=5582210648311314777&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2finside-mrbeasts-5-billion-generosity-191138270.html&c=5582210648311314777&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -748,7 +682,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337847",
+    "id": "RES-LIVE-1790359412",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -760,7 +694,7 @@
     "snippet": "Sources confirm there are active talks around film rights for the mystery thriller, titled 'The Most Dangerous Games.' ...",
     "detectedAt": "16 days ago",
     "detectedAtEpoch": 1788949980000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fwww.hollywoodreporter.com%2flifestyle%2flifestyle-news%2fmrbeast-james-patterson-novel-debut-nyt-bestseller-list-1236696027%2f&c=10879713848337872406&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fwww.hollywoodreporter.com%2flifestyle%2flifestyle-news%2fmrbeast-james-patterson-novel-debut-nyt-bestseller-list-1236696027%2f&c=10879713848337872406&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -770,7 +704,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337848",
+    "id": "RES-LIVE-1790359413",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -782,7 +716,7 @@
     "snippet": "Jimmy Donaldson runs a litany of businesses, and says he can feel like a \u201czoo animal\u201d working a schedule that is not for the faint of heart. \u00b7 Fortune \u00b7 Alexi Rosenfeld / Getty Images \"The average ...",
     "detectedAt": "568 days ago",
     "detectedAtEpoch": 1741230060000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmrbeast-world-top-youtuber-85-110000278.html&c=7227525865242207743&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmrbeast-world-top-youtuber-85-110000278.html&c=7227525865242207743&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -792,7 +726,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337849",
+    "id": "RES-LIVE-1790359414",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -802,9 +736,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast and James Patterson discuss new co-authored thriller book | FOX 10 Talks",
     "snippet": "YouTube star Jimmy Donaldson, known online as MrBeast, has teamed up with bestselling author James Patterson to co-author a 449-page thriller novel. The collaboration bridges two different generations ...",
-    "detectedAt": "21 days ago",
+    "detectedAt": "22 days ago",
     "detectedAtEpoch": 1788445503000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fwww.msn.com%2fen-us%2fentertainment%2fcelebrities%2fmrbeast-and-james-patterson-discuss-new-co-authored-thriller-book-fox-10-talks%2fvi-AA2bwiJd&c=16748102320562931099&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fwww.msn.com%2fen-us%2fentertainment%2fcelebrities%2fmrbeast-and-james-patterson-discuss-new-co-authored-thriller-book-fox-10-talks%2fvi-AA2bwiJd&c=16748102320562931099&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -814,7 +748,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337850",
+    "id": "RES-LIVE-1790359415",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -824,9 +758,9 @@
     "sourceType": "Bing News",
     "title": "Billionaire YouTuber MrBeast confesses he\u2019s borrowing money from his mom to pay for wedding",
     "snippet": "MrBeast admitted he\u2019s borrowing money from his mom to pay for his upcoming wedding to Thea Booysen \u2014 despite being worth an estimated $1 billion. The YouTuber, whose real name is Jimmy Donaldson, ...",
-    "detectedAt": "478 days ago",
+    "detectedAt": "479 days ago",
     "detectedAtEpoch": 1748962380000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fpagesix.com%2f2025%2f06%2f03%2fcelebrity-news%2fbillionaire-mrbeast-borrowing-money-from-his-mom-for-wedding%2f&c=5703526339825413542&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fpagesix.com%2f2025%2f06%2f03%2fcelebrity-news%2fbillionaire-mrbeast-borrowing-money-from-his-mom-for-wedding%2f&c=5703526339825413542&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -836,7 +770,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337851",
+    "id": "RES-LIVE-1790359416",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -846,9 +780,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast Says AI Videos Create \u2018Scary Times\u2019 for \u2018Millions of Creators\u2019 on YouTube",
     "snippet": "Jimmy Donaldson, who goes by MrBeast on social media, has more than 443 million YouTube subscribers. Donaldson wrote in a post on X on Sunday that AI had created \u201cscary times\u201d for content creators.",
-    "detectedAt": "353 days ago",
+    "detectedAt": "354 days ago",
     "detectedAtEpoch": 1759754220000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fwww.entrepreneur.com%2fbusiness-news%2fmrbeast-ai-videos-could-impact-millions-of-youtube-creators%2f497999&c=4609539970250087170&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fwww.entrepreneur.com%2fbusiness-news%2fmrbeast-ai-videos-could-impact-millions-of-youtube-creators%2f497999&c=4609539970250087170&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -858,7 +792,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337852",
+    "id": "RES-LIVE-1790359417",
     "keywordMatched": "Jimmy Donaldson",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -870,7 +804,7 @@
     "snippet": "If anyone could get James Patterson blinged out in chains, sunglasses and stacks of dollar bills, it\u2019s MrBeast. And if anyone could get the YouTuber to pick up the pen, it\u2019s Patterson. Patterson and ...",
     "detectedAt": "24 days ago",
     "detectedAtEpoch": 1788238980000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663244b8248eb92dd05f4f9ae817c&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2fbooks%2f2026%2f09%2f01%2fmrbeast-most-dangerous-games-book-interview%2f91491511007%2f&c=14280294486852085605&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7636a784e7297f1c1208b3b104b&url=https%3a%2f%2fwww.usatoday.com%2fstory%2fentertainment%2fbooks%2f2026%2f09%2f01%2fmrbeast-most-dangerous-games-book-interview%2f91491511007%2f&c=14280294486852085605&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -880,19 +814,19 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337854",
+    "id": "RES-LIVE-1790359418",
     "keywordMatched": "Feastables",
     "category": "Negativity & Defamation",
     "severity": "Low",
     "riskScore": 28,
     "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "100% of cocoa in Feastables' chocolate is Fairtrade certified",
-    "snippet": "CHICAGO, April 8, 2025 /CNW/ - Feastables now sources 100 percent of its cocoa from Fairtrade certified cooperatives. The certification ensures Feastables chocolate is produced in line with the ...",
-    "detectedAt": "535 days ago",
-    "detectedAtEpoch": 1744090440000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2f100-cocoa-feastables-chocolate-fairtrade-123400174.html&c=15289234498274114234&mkt=en-us",
+    "source": "Sporked",
+    "sourceType": "Google News",
+    "title": "Liquid Death\u2019s Peanut Butter Cup Water Is Both Trick And Treat - Sporked",
+    "snippet": "Liquid Death\u2019s Peanut Butter Cup Water Is Both Trick And Treat&nbsp;&nbsp;Sporked",
+    "detectedAt": "45 days ago",
+    "detectedAtEpoch": 1786431600000,
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uZHVRMlJJQnlieGoyUFNJTy1RRmNfYkJXTHNRU2oxbHpsUkV1R3JlZ3JzSl9BdUVGSHg5Ul90Zk9oU2xxWTZiX0hNZk5CMHdlQk50UUQ1UjdfX0tXVUxzbXRCeGVPSWE5TlZWWVpMRGF5UWNQcTUwV2g4QzY?oc=5",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -902,7 +836,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337855",
+    "id": "RES-LIVE-1790359419",
+    "keywordMatched": "Feastables",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "MediaPost",
+    "sourceType": "Google News",
+    "title": "Liquid Death Taps MrBeast's Feastables For Allergen-Free Flavor Collab 08/10/2026 - MediaPost",
+    "snippet": "Liquid Death Taps MrBeast's Feastables For Allergen-Free Flavor Collab 08/10/2026&nbsp;&nbsp;MediaPost",
+    "detectedAt": "46 days ago",
+    "detectedAtEpoch": 1786345200000,
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdE50TElsT3FRbFl0ckQ4djg5N2RZVi0tV21pUjNyOEFOWU1temgzUEpxeXlZWGxrZ0t5RWVwLTMxUVh4UGtFekc5dFQ5WkZmRkxnVTFJaEFGaTdycTlfM2E3Mlh6a2RLdFYzTXBDVms5X0hQVy14ZzkxcExYVlVHbGtXUWNWUjNaTW82eUhTUGZiVV9JWlNfLWVSQlJiRW1yU0FtbFZzSWFGTzJ1?oc=5",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359421",
     "keywordMatched": "Feastables",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -914,7 +870,7 @@
     "snippet": "Do MrBeast's Feastables chocolate bars taste as good as other chocolate brands like Hershey? I wanted to find out, so I went to Walmart to get some of MrBeast's Feastable bars and set up a blind taste ...",
     "detectedAt": "14 days ago",
     "detectedAtEpoch": 1789065600000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fwww.msn.com%2fen-us%2ffood-and-drink%2fgeneral%2fmrbeast-feastables-chocolate-vs-hershey-taste-test-mrbeast-feastables%2fvi-AA1ZP7dn&c=6536051284606928333&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fmrbeast-feastables-chocolate-vs-hershey-taste-test-mrbeast-feastables%2fvi-AA1ZP7dn&c=8825260403791145214&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -924,7 +880,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337856",
+    "id": "RES-LIVE-1790359422",
     "keywordMatched": "Feastables",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -932,11 +888,11 @@
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "Eating every Minecraft food in real life!",
-    "snippet": "Review of Feastables Hazelnut Cups \u2014 a taste test in which the reviewer finds them very tasty and notes the hazelnuts are ethically sourced. #Feastables #HazelnutCups #ProductReview #EthicallySourced ...",
-    "detectedAt": "9 days ago",
-    "detectedAtEpoch": 1789560000000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fwww.msn.com%2fen-us%2ffood-and-drink%2fgeneral%2feating-every-minecraft-food-in-real-life%2fvi-AA2cneQF&c=12177536572678493597&mkt=en-us",
+    "title": "100% of cocoa in Feastables' chocolate is Fairtrade certified",
+    "snippet": "CHICAGO, April 8, 2025 /CNW/ - Feastables now sources 100 percent of its cocoa from Fairtrade certified cooperatives. The certification ensures Feastables chocolate is produced in line with the ...",
+    "detectedAt": "535 days ago",
+    "detectedAtEpoch": 1744090440000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2f100-cocoa-feastables-chocolate-fairtrade-123400174.html&c=15289234498274114234&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -946,7 +902,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337858",
+    "id": "RES-LIVE-1790359423",
     "keywordMatched": "Feastables",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -954,11 +910,11 @@
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "What Is MrBeast\u2019s Net Worth? How the Highest-Paid YouTuber Made His Fortune \u2014 and Why He Says He's Only a Billionaire 'On Paper'",
-    "snippet": "Ventures like Feastables and his hit show 'Beast Games' made MrBeast the highest-paid YouTuber in 2025 Gilbert Flores/Billboard via Getty In June 2025, MrBeast was named by Forbes as the highest-paid ...",
-    "detectedAt": "261 days ago",
-    "detectedAtEpoch": 1767765600000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fpeople.com%2fmrbeast-net-worth-11879997&c=7347972578093581442&mkt=en-us",
+    "title": "\"How is this even possible?!\": Fans react as TikTok creator eats 100 litres of Feastables chocolate bars",
+    "snippet": "TikTok creator Wallywhatthe recently uploaded a video showcasing him eating a hundred liters worth of Feastables, the chocolate brand owned by Jimmy \"MrBeast.\" The video has gone viral on social media ...",
+    "detectedAt": "816 days ago",
+    "detectedAtEpoch": 1719829440000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.sportskeeda.com%2fus%2fstreamers%2fnews-how-even-possible-fans-react-tiktok-creator-eats-100-litres-feastables-chocolate-bars&c=13601211376388658119&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -968,7 +924,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337859",
+    "id": "RES-LIVE-1790359424",
+    "keywordMatched": "Feastables",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Are MrBeast's cookies actually good? #mrbeast #feastables",
+    "snippet": "In addition to MrBeast Burger and Feastables chocolate bars, MrBeast also makes chocolate cookies. I wanted to see if these cookies were as good as other cookie brands like Chips Ahoy and Pillsbury, ...",
+    "detectedAt": "15 days ago",
+    "detectedAtEpoch": 1788982800000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fare-mrbeasts-cookies-actually-good-mrbeast-feastables%2fvi-AA1ZOqBt&c=17966686182657707219&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359426",
     "keywordMatched": "Feastables",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -980,7 +958,7 @@
     "snippet": "CHICAGO, March 17, 2025 /PRNewswire/ - Feastables, the global snacking company founded in 2022, by YouTube creator and influencer Jimmy Donaldson (better known as MrBeast), has completed the kosher ...",
     "detectedAt": "557 days ago",
     "detectedAtEpoch": 1742188740000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2ffeastables-fastest-growing-global-chocolate-121800101.html&c=3089865712711826723&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2ffeastables-fastest-growing-global-chocolate-121800101.html&c=3089865712711826723&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -990,7 +968,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337860",
+    "id": "RES-LIVE-1790359427",
     "keywordMatched": "Feastables",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -998,11 +976,11 @@
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "MrBeast says it'll be 'way cheaper' to make his Feastables chocolates outside the US because of Trump's tariffs",
-    "snippet": "You're currently following this author! Click to unsubscribe from email alerts. MrBeast's ethically sourced chocolate brand, Feastables, is feeling the pain of President Donald Trump's tariffs.",
-    "detectedAt": "535 days ago",
-    "detectedAtEpoch": 1744111440000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632637d948c3b2349f12a1fdbbd6&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-says-cheaper-to-make-feastables-abroad-trump-tariffs-2025-4&c=106553365256176788&mkt=en-us",
+    "title": "Five Below Drops Limited-Time MrBeast Feastables, and Fans Are Obsessed",
+    "snippet": "If you've been hunting for a snack that's both indulgent and social media-worthy, Five Below just made it way easier. The store is now carrying MrBeast's newest Feastables creation: Hazelnut Cups! If ...",
+    "detectedAt": "408 days ago",
+    "detectedAtEpoch": 1755073500000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7668ce2402b9e27f71944c0783d&url=https%3a%2f%2fwww.yahoo.com%2flifestyle%2farticles%2ffive-below-drops-limited-time-152535814.html&c=8885136922787096188&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1012,7 +990,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337861",
+    "id": "RES-LIVE-1790359428",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1022,9 +1000,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast just filed a trademark application under 'Beast Band' for wearables like a fitness tracker",
     "snippet": "MrBeast filed a trademark application for \"Beast Band,\" paving the way to branch out into wearables, like fitness trackers.",
-    "detectedAt": "2 days ago",
+    "detectedAt": "3 days ago",
     "detectedAtEpoch": 1790089680000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-trademark-application-wearables-fitness-tracker-band-2026-9&c=2013146088569420305&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-trademark-application-wearables-fitness-tracker-band-2026-9&c=2013146088569420305&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1034,7 +1012,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337862",
+    "id": "RES-LIVE-1790359429",
+    "keywordMatched": "Beast Industries",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast and Rajiv Shah: We\u2019ve Seen What Video Can Do. Let\u2019s Use It for Good.",
+    "snippet": "We both came to this work because we\u2019ve seen what video can do: It uniquely moves people to act. For Jimmy, it happened gradually. As he built a following as MrBeast through high-stakes challenges and ...",
+    "detectedAt": "2 days ago",
+    "detectedAtEpoch": 1790128920000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.nytimes.com%2f2026%2f09%2f23%2fopinion%2fmrbeast-rajiv-shah-video.html&c=3531197277620417195&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359430",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1046,7 +1046,7 @@
     "snippet": "The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for ...",
     "detectedAt": "253 days ago",
     "detectedAtEpoch": 1768462260000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fbitmine-drops-200m-mrbeast-takes-153110151.html&c=2847684308512056128&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fbitmine-drops-200m-mrbeast-takes-153110151.html&c=2847684308512056128&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1056,29 +1056,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337863",
-    "keywordMatched": "Beast Industries",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast and Rajiv Shah: We\u2019ve Seen What Video Can Do. Let\u2019s Use It for Good.",
-    "snippet": "We both came to this work because we\u2019ve seen what video can do: It uniquely moves people to act. For Jimmy, it happened gradually. As he built a following as MrBeast through high-stakes challenges and ...",
-    "detectedAt": "2 days ago",
-    "detectedAtEpoch": 1790128920000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.nytimes.com%2f2026%2f09%2f23%2fopinion%2fmrbeast-rajiv-shah-video.html&c=3531197277620417195&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337864",
+    "id": "RES-LIVE-1790359431",
     "keywordMatched": "Beast Industries",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1090,7 +1068,7 @@
     "snippet": "Beast Industries, the creator-led enterprise built by YouTube sensation MrBeast, said it has acquired Step, a financial technology company focused on money management and financial education. The deal ...",
     "detectedAt": "228 days ago",
     "detectedAtEpoch": 1770637680000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fmrbeast-expands-beyond-youtube-as-beast-industries-acquires-step-fintech-platform%2far-AA1W0rlG&c=3457743058433202729&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fmrbeast-expands-beyond-youtube-as-beast-industries-acquires-step-fintech-platform%2far-AA1W0rlG&c=3457743058433202729&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1100,7 +1078,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337865",
+    "id": "RES-LIVE-1790359432",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1112,7 +1090,7 @@
     "snippet": "The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for ...",
     "detectedAt": "294 days ago",
     "detectedAtEpoch": 1764911040000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmrbeast-fans-might-chance-become-130440010.html&c=14254104380572404072&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmrbeast-fans-might-chance-become-130440010.html&c=14254104380572404072&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1122,7 +1100,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337866",
+    "id": "RES-LIVE-1790359433",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1134,7 +1112,7 @@
     "snippet": "Beast Industries, the fast-expanding business empire built by Jimmy \u201cMrBeast\u201d Donaldson, has now reached an estimated valuation of around $5 billion, according to recent funding disclosures. That ...",
     "detectedAt": "294 days ago",
     "detectedAtEpoch": 1764934380000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fhow-valuable-mrbeast-s-beast-industries-has-become-and-what-it-means-for-fans%2far-AA1RNKdo&c=11574762438724552326&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fhow-valuable-mrbeast-s-beast-industries-has-become-and-what-it-means-for-fans%2far-AA1RNKdo&c=11574762438724552326&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1144,7 +1122,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337867",
+    "id": "RES-LIVE-1790359434",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1156,7 +1134,7 @@
     "snippet": "Bitmine Immersion Technologies Inc. (NYSE AMERICAN: BMNR) announced a $200 million equity investment in Beast Industries, the entertainment company founded by YouTube creator Jimmy Donaldson, known as ...",
     "detectedAt": "253 days ago",
     "detectedAtEpoch": 1768432200000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.streetinsider.com%2fCorporate%2bNews%2fBitmine%2bannounces%2b%2524200%2bmillion%2binvestment%2bin%2bBeast%2bIndustries%2f25852284.html&c=11528733099685541842&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.streetinsider.com%2fCorporate%2bNews%2fBitmine%2bannounces%2b%2524200%2bmillion%2binvestment%2bin%2bBeast%2bIndustries%2f25852284.html&c=11528733099685541842&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1166,19 +1144,19 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337868",
+    "id": "RES-LIVE-1790359435",
     "keywordMatched": "Beast Industries",
-    "category": "Negativity & Defamation",
+    "category": "Operational & Financial Intel",
     "severity": "Low",
     "riskScore": 28,
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "MrBeast has dreams of building the next Disney",
-    "snippet": "You're currently following this author! Want to unfollow? Unsubscribe via the link in your email. MrBeast wants to build a Disney for the next generation. The CEO of the YouTuber's company, Beast ...",
-    "detectedAt": "533 days ago",
-    "detectedAtEpoch": 1744275360000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632890404c4cba890732d2e45f7c&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-building-next-disney-ceo-pitching-beast-industries-to-investors-2025-4&c=1581285847841572985&mkt=en-us",
+    "title": "MrBeast\u2019s business empire stretches far beyond viral YouTube videos",
+    "snippet": "Jimmy Donaldson might have made his fortune on YouTube, but the man better known as MrBeast has plans for a much wider financial empire\u2014and he's well on his way to achieving it. Through Beast ...",
+    "detectedAt": "226 days ago",
+    "detectedAtEpoch": 1770775860000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7685f0a4d6cbf01ec1308089813&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fmrbeast-business-empire-stretches-far-101100425.html&c=7424052537661781299&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1188,19 +1166,19 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337871",
+    "id": "RES-LIVE-1790359436",
     "keywordMatched": "Beast Industries",
     "category": "Negativity & Defamation",
     "severity": "Low",
     "riskScore": 28,
     "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "Taming MrBeast",
-    "snippet": "Follow this author to personalize your feed and get instant alerts. WHY FOLLOW? Custom Feed: See the stories that matter most to you. Smart Alerts: Get notified about major news as it happens. Update ...",
-    "detectedAt": "148 days ago",
-    "detectedAtEpoch": 1777529520000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab663292a2c4734ba2fccf47eaf1af1&url=https%3a%2f%2ftime.com%2fcollection%2ftime100-most-influential-companies%2f2026%2fbeast-industries%2f&c=13560107277179463180&mkt=en-us",
+    "source": "Hacker News",
+    "sourceType": "Hacker News",
+    "title": "Protobuffers Are Wrong (2018)",
+    "snippet": "Depends. ASN.1 is a beast and another industry standard, but unfortunately the best tooling is closed source.",
+    "detectedAt": "385 days ago",
+    "detectedAtEpoch": 1757089629000,
+    "url": "https://news.ycombinator.com/item?id=45140406",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1210,7 +1188,95 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337872",
+    "id": "RES-LIVE-1790359437",
+    "keywordMatched": "Beast Industries",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Hacker News",
+    "sourceType": "Hacker News",
+    "title": "Microsoft is blocking Google Chrome through its family safety feature",
+    "snippet": "Google occasionally breaks YouTube in Firefox, and also takes its sweet time to fix it. Just the nature of the beast in this industry it seems.",
+    "detectedAt": "461 days ago",
+    "detectedAtEpoch": 1750459127000,
+    "url": "https://news.ycombinator.com/item?id=44332760",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359439",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Yahoo Sports",
+    "sourceType": "Google News",
+    "title": "Week 3 NFL odds, picks, predictions: Our best bets for the weekend's games - Yahoo Sports",
+    "snippet": "Week 3 NFL odds, picks, predictions: Our best bets for the weekend's games&nbsp;&nbsp;Yahoo Sports",
+    "detectedAt": "1 hour ago",
+    "detectedAtEpoch": 1790353898000,
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWFlWLXB0Rkx3UFlMeUtSNl94dnFkekhFeGVwa3Q0ZEZaX19Hc0ZoLWFVdDVUbXF3b0ZXcmRfT1d0Ty01UTRnZlNQWGVpTVBhTk9pOTl1RE9WUU1qNkFGaS1iRk5jV2wyQXdHQmtRd1lVME9iVnRrbXlfd2RnZERTWFllclkzd2FzdUxVczJRbm5YODg5azlJSElvN24xQm5sOFVEY3JyaWFWT0tvY19rU2daTVkyU3kxZm1nUUVTcU1mUDJXOFVUNEd3?oc=5",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359440",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "ESPN",
+    "sourceType": "Google News",
+    "title": "NFL Week 3 betting guide: Analysis and top plays for Sunday's games - ESPN",
+    "snippet": "NFL Week 3 betting guide: Analysis and top plays for Sunday's games&nbsp;&nbsp;ESPN",
+    "detectedAt": "7 hours ago",
+    "detectedAtEpoch": 1790332740000,
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSW9kUU01dDg0OEdzaERCZUkyWDlhVzcyb1lZb0gwWnM1T1V5ZURjZW5nbW9FWUgza3hMMkI2STIzLUZTS2NvQ0JXLTN3Z0c1UWdST0pSbkViaWVldm1sZVBBZ0F1Y1k2MjJuSFBoQmpnZXVNN3FMRXlqMnpxRWJ3UTRTMWZhVUhsSTY1ZEZBRWF6QTFKQ1NFdWdQd1J6TVhtczBNc2JTVG14MGJmUFhIdnRUOUVwVUtPMlVnVWVR?oc=5",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359441",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bergen Record",
+    "sourceType": "Google News",
+    "title": "The best food and drink at MetLife is in the parking lot - Bergen Record",
+    "snippet": "The best food and drink at MetLife is in the parking lot&nbsp;&nbsp;Bergen Record",
+    "detectedAt": "8 hours ago",
+    "detectedAtEpoch": 1790329920000,
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWk5mSnJkYVhDYkxqbndzTWNlRloyV1ZWdUtoWFc4UTdyUXg0dFZGYkgwNm1JZUhIVURLSUhUeHNEb3haRW9tR2poMUxNUlBGRU5xek5uSFFzRGhBQlc0dW15dmt4T3lGZTBHMlFGOEpqOWgtY1o0enk3ZHNGa3dGR3JXczc3MWdzWGRDakFSTjVaY25lNndiQS15bmgzMjJoQzZQeUQ5RnlKM09naG5HSUdsMmI?oc=5",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359442",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1218,11 +1284,11 @@
     "confidence": 70,
     "source": "Polygon.com",
     "sourceType": "Google News",
-    "title": "8 Best BioWare Games That Aged Like Fine Wine - Polygon.com",
-    "snippet": "8 Best BioWare Games That Aged Like Fine Wine&nbsp;&nbsp;Polygon.com",
-    "detectedAt": "13 hours ago",
-    "detectedAtEpoch": 1790290815000,
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9WaDRLS1IzV3ltbVg1QU1zQnlCVlBaNlZQMkNteXVZWFRhMkx3SkluNmh0NjE5dVNoU3RVZTl2RWdmMTh4V3VxeUxvdmVTWmRWc2lYdFZn?oc=5",
+    "title": "Ace Combat 8 Reviews Officially Make It One of 2026\u2019s Best-Reviewed Games - Polygon.com",
+    "snippet": "Ace Combat 8 Reviews Officially Make It One of 2026\u2019s Best-Reviewed Games&nbsp;&nbsp;Polygon.com",
+    "detectedAt": "2 hours ago",
+    "detectedAtEpoch": 1790349782000,
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KZEdNUklLNGVnZWRFeTVkNmVFWjNrM2lBcnJMWXA1UnJVQXYxV3VZSFE3aE82ZDNIUXJTcU9maTE2YU5LVWdlRkQwNy16eTFmbG5FY2JkeDR5ZFN2aEE1ZElB?oc=5",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1232,7 +1298,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337873",
+    "id": "RES-LIVE-1790359443",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "CBS Sports",
+    "sourceType": "Google News",
+    "title": "NFL Week 3 odds, best bets, expert picks: Who has edge in Rams-Broncos? Will Texans earn first win? - CBS Sports",
+    "snippet": "NFL Week 3 odds, best bets, expert picks: Who has edge in Rams-Broncos? Will Texans earn first win?&nbsp;&nbsp;CBS Sports",
+    "detectedAt": "4 hours ago",
+    "detectedAtEpoch": 1790343906000,
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdHRoVHNuNF9TaWhrYlBXeElQSUdfd3JvMW1aQmJpWjlBdV93bnNiZkphZEhEZGxrX3BSMFNlMUdBUzdUeU5udHNVTjl5RmlYenVrYlpuVU1RNDJyeHJWRkJfV1REbzZFMy0xNC1LaEg0TU1HUGdSUUFOWWRzQl9CLQ?oc=5",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359444",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1244,7 +1332,7 @@
     "snippet": "The much-awaited reality show Beast Games has dropped. It features the internet sensation Jimmy Donaldson, aka Mr. Beast, organizing an exciting competition for one thousand players. The contestants ...",
     "detectedAt": "638 days ago",
     "detectedAtEpoch": 1735167120000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fbeast-games-filming-locations-where-065214566.html&c=17347384094140031830&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fbeast-games-filming-locations-where-065214566.html&c=17347384094140031830&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1254,7 +1342,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337874",
+    "id": "RES-LIVE-1790359445",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1264,9 +1352,9 @@
     "sourceType": "Bing News",
     "title": "MrBeast\u2019s game show, \u2018Beast Games,\u2019 is here. This is what people are saying about it",
     "snippet": "Add Yahoo as a preferred source to see more of our stories on Google. Jimmy Donaldson, also known as MrBeast, attends as MrBeast celebrates the premiere of the new Prime Video Competition Series ...",
-    "detectedAt": "643 days ago",
+    "detectedAt": "644 days ago",
     "detectedAtEpoch": 1734703440000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmrbeast-game-show-beast-games-220412649.html&c=12347711686276950465&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fmrbeast-game-show-beast-games-220412649.html&c=12347711686276950465&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1276,7 +1364,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337875",
+    "id": "RES-LIVE-1790359446",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Everything to know about MrBeast\u2019s Beast Games season 2: Premiere date, prize money, and participant lineup",
+    "snippet": "The massive reality competition series created by Jimmy Donaldson, better known as MrBeast, is gearing up for an even bigger return as Beast Games season 2 hits Prime Video. Following the explosive ...",
+    "detectedAt": "288 days ago",
+    "detectedAtEpoch": 1765452120000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2feverything-to-know-about-mrbeast-s-beast-games-season-2-premiere-date-prize-money-and-participant-lineup%2far-AA1SaN2u&c=7479100228341802587&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359447",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1286,9 +1396,9 @@
     "sourceType": "Bing News",
     "title": "Here\u2019s when \u2018Beast Games\u2019 season 2 premieres and more information about the show\u2019s return",
     "snippet": "Beast Games\u2019 second season is right around the corner. \u201cAfter a record-shattering first season, Beast Games is back! Bigger, bolder, and more intense than ever. MrBeast has assembled 100 of the planet ...",
-    "detectedAt": "263 days ago",
+    "detectedAt": "264 days ago",
     "detectedAtEpoch": 1767530400000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftv%2fnews%2fhere-s-when-beast-games-season-2-premieres-and-more-information-about-the-show-s-return%2far-AA1Tz79n&c=6453727302232845398&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftv%2fnews%2fhere-s-when-beast-games-season-2-premieres-and-more-information-about-the-show-s-return%2far-AA1Tz79n&c=6453727302232845398&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1298,29 +1408,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337876",
-    "keywordMatched": "Beast Games",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "'Beast Games' season 2 release schedule: When do new episodes come out?",
-    "snippet": "\"Beast Games\" is back for season 2, and this season promises to be \"bigger, bolder, and more intense than ever.\" Now streaming on Prime Video, the competition series sees MrBeast assemble 200 ...",
-    "detectedAt": "261 days ago",
-    "detectedAtEpoch": 1767715200000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftv%2fnews%2fbeast-games-season-2-release-schedule-when-do-new-episodes-come-out%2far-AA1TM8uw&c=1040010428024848596&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337878",
+    "id": "RES-LIVE-1790359449",
     "keywordMatched": "Beast Games",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1332,7 +1420,7 @@
     "snippet": "In 2024, MrBeast made the leap from his thriving \u201cHey guys\u201d YouTube challenge universe to hosting a reality competition on TV. Taking its Squid Game inspiration to the natural extreme \u2014 no bodily harm ...",
     "detectedAt": "261 days ago",
     "detectedAtEpoch": 1767762000000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fdecider.com%2f2026%2f01%2f07%2fbeast-games-sean-klitzner-interview%2f&c=5866711794877144465&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fdecider.com%2f2026%2f01%2f07%2fbeast-games-sean-klitzner-interview%2f&c=5866711794877144465&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1342,7 +1430,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337879",
+    "id": "RES-LIVE-1790359450",
+    "keywordMatched": "Beast Games",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Season 2 \u2013 Beast Games",
+    "snippet": "Link to Best New Movies of 2026, Ranked by Tomatometer Best TV Shows of 2026: New Series to Watch Now Link to Best TV Shows of 2026: New Series to Watch Now Poll: Vote for Your Most Anticipated Movies ...",
+    "detectedAt": "262 days ago",
+    "detectedAtEpoch": 1767715200000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.rottentomatoes.com%2ftv%2fbeast_games%2fs02&c=10602282956549645405&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359451",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1354,7 +1464,7 @@
     "snippet": "Beast Games is already becoming a cultural juggernaut, and Season 2 is shaping up to be even more explosive. With lessons learned, a more refined production approach, and a fan base hungry for the ...",
     "detectedAt": "522 days ago",
     "detectedAtEpoch": 1745212620000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.yardbarker.com%2fentertainment%2farticles%2fbeast_games_season_2_will_it_be_more_jaw_dropping_drama%2fs1_17456_42084738&c=11398581245885126059&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76a5f5549beaba4efe244adcbc8&url=https%3a%2f%2fwww.yardbarker.com%2fentertainment%2farticles%2fbeast_games_season_2_will_it_be_more_jaw_dropping_drama%2fs1_17456_42084738&c=11398581245885126059&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1364,29 +1474,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337880",
-    "keywordMatched": "Beast Games",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "Who Wins \u2018Beast Games\u2019 Season 2? Updated Betting Odds & Predictions for Top Players Ahead of 2026 Finale",
-    "snippet": "With one week remaining until the season finale of Beast Games, everyone is wondering who will take home the $5 million grand prize. Social media star MrBeast hosts the series, in which players use ...",
-    "detectedAt": "218 days ago",
-    "detectedAtEpoch": 1771425180000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632a43db4e988b07e58cd9a145ac&url=https%3a%2f%2fwww.justjared.com%2f2026%2f02%2f18%2fwho-wins-beast-games-season-2-updated-betting-odds-predictions-for-top-players-ahead-of-2026-finale%2f&c=4703848403560294905&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337881",
+    "id": "RES-LIVE-1790359452",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1398,7 +1486,7 @@
     "snippet": "See more of our trusted coverage when you search. Prefer Newsweek on Google to see more of our trusted coverage when you search. YouTube sensation MrBeast, widely known for his jaw-dropping stunts and ...",
     "detectedAt": "632 days ago",
     "detectedAtEpoch": 1735708920000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.newsweek.com%2fmrbeast-beast-games-terrible-reviews-2008259&c=1517005479568926649&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.newsweek.com%2fmrbeast-beast-games-terrible-reviews-2008259&c=1517005479568926649&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1408,7 +1496,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337882",
+    "id": "RES-LIVE-1790359453",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1420,7 +1508,7 @@
     "snippet": "Collier Jennings is an entertainment journalist with extensive experience. Collier, or \"CJ\" to his friends and family, is a dedicated fan of genre films - particularly science fiction, fantasy, and ...",
     "detectedAt": "586 days ago",
     "detectedAtEpoch": 1739667000000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fcollider.com%2fbeast-games-controversies-explained%2f&c=3759655613665511613&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fcollider.com%2fbeast-games-controversies-explained%2f&c=3759655613665511613&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1430,7 +1518,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337883",
+    "id": "RES-LIVE-1790359454",
     "keywordMatched": "Beast Games",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1442,7 +1530,7 @@
     "snippet": "Sam had been on the set of \"Beast Games\" for only a few hours when disaster struck. It was his first day as a freelance crew member on the Toronto set of the new game show from the YouTuber MrBeast.",
     "detectedAt": "573 days ago",
     "detectedAtEpoch": 1740794700000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.businessinsider.com%2fbeast-games-accident-crew-member-injured-toronto-set-mrbeast-2025-3&c=120457823986697484&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.businessinsider.com%2fbeast-games-accident-crew-member-injured-toronto-set-mrbeast-2025-3&c=120457823986697484&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1452,7 +1540,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337884",
+    "id": "RES-LIVE-1790359455",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1464,7 +1552,7 @@
     "snippet": "Youtuber MrBeast\u2019s obnoxious Squid Game imitation \u2013 which is currently being sued by contestants \u2013 is ugly, tasteless TV. It\u2019s as grimly compelling as picking a scab The new Amazon gameshow Beast ...",
     "detectedAt": "644 days ago",
     "detectedAtEpoch": 1734665640000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.theguardian.com%2ftv-and-radio%2f2024%2fdec%2f20%2fbeast-games-review-one-of-the-most-undignified-spectacles-ever-shown-on-tv&c=3508695668531958152&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.theguardian.com%2ftv-and-radio%2f2024%2fdec%2f20%2fbeast-games-review-one-of-the-most-undignified-spectacles-ever-shown-on-tv&c=3508695668531958152&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1474,7 +1562,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337886",
+    "id": "RES-LIVE-1790359457",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1484,9 +1572,9 @@
     "sourceType": "Bing News",
     "title": "Beast Games Review",
     "snippet": "The first two episodes of Beast Games are streaming on Prime Video. Jimmy \u201cMrBeast\u201d Donaldson didn\u2019t become the biggest YouTuber in the world because of charisma, cleverness, or creativity. The new ...",
-    "detectedAt": "644 days ago",
+    "detectedAt": "645 days ago",
     "detectedAtEpoch": 1734622140000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.ign.com%2farticles%2fbeast-games-review-mr-beast-prime-video&c=1025891425720973650&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.ign.com%2farticles%2fbeast-games-review-mr-beast-prime-video&c=1025891425720973650&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1496,7 +1584,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337888",
+    "id": "RES-LIVE-1790359459",
     "keywordMatched": "Beast Games",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1508,7 +1596,7 @@
     "snippet": "Is this big-money challenge cruel? Yes. But it\u2019s mainly just tedious to watch these immature players and their teenage machinations as they battle for cash The first season of Beast Games \u2013 the ...",
     "detectedAt": "261 days ago",
     "detectedAtEpoch": 1767733500000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632b141c48f49d5864ce52cb0368&url=https%3a%2f%2fwww.theguardian.com%2ftv-and-radio%2f2026%2fjan%2f07%2fbeast-games-season-two-review-mrbeast-amazon-prime-video&c=5870936777605514959&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76b93204c719bd421d004f08bac&url=https%3a%2f%2fwww.theguardian.com%2ftv-and-radio%2f2026%2fjan%2f07%2fbeast-games-season-two-review-mrbeast-amazon-prime-video&c=5870936777605514959&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1518,7 +1606,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337889",
+    "id": "RES-LIVE-1790359460",
+    "keywordMatched": "Beast Philanthropy",
+    "category": "Operational & Financial Intel",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast's $10 million Ghana village: He says the video won't do well",
+    "snippet": "MrBeast spent eight months and about $10 million building a village in Abna Dakwa, Ghana, to keep kids out of illegal labor.",
+    "detectedAt": "7 hours ago",
+    "detectedAtEpoch": 1790332189000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.msn.com%2fen-us%2fentertainment%2fgeneral%2fmrbeast-s-10-million-ghana-village-he-says-the-video-won-t-do-well%2far-AA2cYXS0&c=1302860926007318084&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359461",
     "keywordMatched": "Beast Philanthropy",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1526,11 +1636,11 @@
     "confidence": 70,
     "source": "Bing News",
     "sourceType": "Bing News",
-    "title": "MrBeast spends $10 million building village in Ghana, says he'll do it even if no one watches",
+    "title": "MrBeast spends $10 million building village in Ghana, says he'll do it 'even if no one watches'",
     "snippet": "The project exposed millions of younger viewers to a model of giving centered on community support.",
-    "detectedAt": "15 hours ago",
+    "detectedAt": "21 hours ago",
     "detectedAtEpoch": 1790283420000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.msn.com%2fen-us%2fentertainment%2fgeneral%2fmrbeast-spends-10-million-building-village-in-ghana-says-he-ll-do-it-even-if-no-one-watches%2far-AA2cVyb7&c=3579330778685082908&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fmrbeast-spends-10-million-building-village-in-ghana-says-hell-do-it-even-if-no-one-watches%2far-AA2cVyb7&c=14365309139060648546&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1540,51 +1650,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337890",
-    "keywordMatched": "Beast Philanthropy",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast reageert op kritiek nadat hij 10.000.000 dollar in Ghana uitgaf",
-    "snippet": "MrBeast slaat terug naar critici en zegt dat hij North Carolina al steunt nadat hij een dorp van 10 miljoen dollar in Ghana heeft gelanceerd.",
-    "detectedAt": "4 days ago",
-    "detectedAtEpoch": 1789962329000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.msn.com%2fnl-nl%2fnieuws%2foverig%2fmrbeast-reageert-op-kritiek-nadat-hij-10000000-dollar-in-ghana-uitgaf%2far-AA2cFPp4&c=16586180491345377500&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337891",
-    "keywordMatched": "Beast Philanthropy",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast hits back at hometown charity criticism after $10M Ghana project",
-    "snippet": "MrBeast has responded to criticism questioning why he doesn\u2019t do more philanthropic work in his hometown of Greenville, North Carolina.",
-    "detectedAt": "4 days ago",
-    "detectedAtEpoch": 1789956180000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.dexerto.com%2fyoutube%2fmrbeast-hits-back-at-hometown-charity-criticism-after-10m-ghana-project-3410894%2f&c=6687449554250201089&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337892",
+    "id": "RES-LIVE-1790359462",
     "keywordMatched": "Beast Philanthropy",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1596,7 +1662,7 @@
     "snippet": "We both came to this work because we\u2019ve seen what video can do: It uniquely moves people to act. For Jimmy, it happened gradually. As he built a following as MrBeast through high-stakes challenges and ...",
     "detectedAt": "2 days ago",
     "detectedAtEpoch": 1790128920000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.nytimes.com%2f2026%2f09%2f23%2fopinion%2fmrbeast-rajiv-shah-video.html&c=3531197277620417195&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.nytimes.com%2f2026%2f09%2f23%2fopinion%2fmrbeast-rajiv-shah-video.html&c=3531197277620417195&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1606,7 +1672,51 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337894",
+    "id": "RES-LIVE-1790359463",
+    "keywordMatched": "Beast Philanthropy",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast hits back at hometown charity criticism after $10M Ghana project",
+    "snippet": "MrBeast has responded to criticism questioning why he doesn\u2019t do more philanthropic work in his hometown of Greenville, North Carolina.",
+    "detectedAt": "4 days ago",
+    "detectedAtEpoch": 1789956180000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.dexerto.com%2fyoutube%2fmrbeast-hits-back-at-hometown-charity-criticism-after-10m-ghana-project-3410894%2f&c=6687449554250201089&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359464",
+    "keywordMatched": "Beast Philanthropy",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast reageert op kritiek nadat hij 10.000.000 dollar in Ghana uitgaf",
+    "snippet": "MrBeast slaat terug naar critici en zegt dat hij North Carolina al steunt nadat hij een dorp van 10 miljoen dollar in Ghana heeft gelanceerd.",
+    "detectedAt": "4 days ago",
+    "detectedAtEpoch": 1789962329000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.msn.com%2fnl-nl%2fnieuws%2foverig%2fmrbeast-reageert-op-kritiek-nadat-hij-10000000-dollar-in-ghana-uitgaf%2far-AA2cFPp4&c=16586180491345377500&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359466",
     "keywordMatched": "Beast Philanthropy",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1618,7 +1728,7 @@
     "snippet": "NEW YORK \u2013 One of the most storied American philanthropies is teaming up with the internet's biggest creator to instill young people with a concern for what they call the world's \u201cmost vulnerable\u201d ...",
     "detectedAt": "305 days ago",
     "detectedAtEpoch": 1763957940000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.ksat.com%2fbusiness%2f2025%2f11%2f24%2fmrbeast-and-the-rockefeller-foundation-are-teaming-up-to-spark-youth-philanthropy%2f&c=14687793044795474086&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2fwww.ksat.com%2fbusiness%2f2025%2f11%2f24%2fmrbeast-and-the-rockefeller-foundation-are-teaming-up-to-spark-youth-philanthropy%2f&c=14687793044795474086&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1628,7 +1738,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337895",
+    "id": "RES-LIVE-1790359467",
     "keywordMatched": "Beast Philanthropy",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1638,9 +1748,9 @@
     "sourceType": "Bing News",
     "title": "Beast Philanthropy and Rockefeller Foundation Partner on Nutritious, Sustainable School Meals in Ghana and Kenya",
     "snippet": "Beast Philanthropy and The Rockefeller Foundation announced in a short form video today the first projects of their strategic partnership, committing to establish community-led, regenerative school ...",
-    "detectedAt": "7 days ago",
+    "detectedAt": "8 days ago",
     "detectedAtEpoch": 1789649460000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fbeast-philanthropy-rockefeller-foundation-partner-195000491.html&c=7117311030476146810&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76c27274ff2bc5370901e977421&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fbeast-philanthropy-rockefeller-foundation-partner-195000491.html&c=7117311030476146810&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1650,29 +1760,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337896",
-    "keywordMatched": "Beast Philanthropy",
-    "category": "Negativity & Defamation",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "MrBeast hits back at criticism over $10 million Ghana village project to combat child labour",
-    "snippet": "MrBeast has defended his $10 million Ghana village project aimed at combating child labour after being questioned over spending overseas. The YouTuber said he \u201cliterally\u201d supports his hometown of ...",
-    "detectedAt": "3 days ago",
-    "detectedAtEpoch": 1789999080000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632c57d84fe9b23b0a59554316ba&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fworld%2fmrbeast-hits-back-at-criticism-over-10-million-ghana-village-project-to-combat-child-labour%2far-AA2cHmeB&c=3253081759394956756&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337897",
+    "id": "RES-LIVE-1790359468",
     "keywordMatched": "Beast Philanthropy",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1682,9 +1770,9 @@
     "sourceType": "Bing News",
     "title": "Beast Philanthropy and Rockefeller Foundation Partner on Nutritious, Sustainable School Meals in Ghana and Kenya",
     "snippet": "The philanthropies will support school meals in Ghana's Eastern Region and Kenya's Bomet County to improve nutrition, learning, attendance, and help keep children out of child labor. School meals have ...",
-    "detectedAt": "8 days ago",
+    "detectedAt": "9 days ago",
     "detectedAtEpoch": 1789578000000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632d985b4c54a4c71b519221eb12&url=https%3a%2f%2fwww.tmcnet.com%2fusubmit%2f2026%2f09%2f17%2f10448016.htm&c=14365238983183830093&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76d27414daa8cd173396eea7ef0&url=https%3a%2f%2fwww.tmcnet.com%2fusubmit%2f2026%2f09%2f17%2f10448016.htm&c=14365238983183830093&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1694,7 +1782,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337898",
+    "id": "RES-LIVE-1790359469",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1706,7 +1794,7 @@
     "snippet": "MrBeast Burger is at the center of a bitter legal battle between Jimmy Donaldson and his business partner, Virtual Dining Concepts.",
     "detectedAt": "245 days ago",
     "detectedAtEpoch": 1769132100000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1716,7 +1804,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337899",
+    "id": "RES-LIVE-1790359470",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1728,7 +1816,7 @@
     "snippet": "MrBeast Burger, the brainchild of YouTube sensation Jimmy Donaldson, aka MrBeast, has revolutionised the fast food scene. This burger place has no physical storefront; it operates entirely from ...",
     "detectedAt": "257 days ago",
     "detectedAtEpoch": 1768093500000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.msn.com%2fen-us%2ffoodanddrink%2ffoodnews%2fmrbeast-burger-menu-prices-with-calories-updated-2026%2far-AA1U2sWS&c=1785938202428069500&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.msn.com%2fen-us%2ffoodanddrink%2ffoodnews%2fmrbeast-burger-menu-prices-with-calories-updated-2026%2far-AA1U2sWS&c=1785938202428069500&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1738,7 +1826,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337900",
+    "id": "RES-LIVE-1790359471",
+    "keywordMatched": "MrBeast Burger",
+    "category": "Operational & Financial Intel",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "Judge urges MrBeast to avoid a trial over his burger business and keep his 'dirty laundry' private",
+    "snippet": "Add Yahoo as a preferred source to see more of our stories on Google. A judge urged MrBeast and his burger business partner to settle their legal dispute to avoid a costly trial. YouTuber Jimmy ...",
+    "detectedAt": "239 days ago",
+    "detectedAtEpoch": 1769699280000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fjudge-urges-mrbeast-avoid-trial-230839999.html&c=11137040368481233269&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359472",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1750,7 +1860,7 @@
     "snippet": "A TikTok video from creator @munchinwithmoonshot shows him searching for a MrBeast Burger location before discovering the order could only be fulfilled from inside a Friendly's restaurant. The ...",
     "detectedAt": "25 days ago",
     "detectedAtEpoch": 1788145260000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.yahoo.com%2flifestyle%2farticles%2freally-wanted-hate-tiktoker-tracked-100110207.html&c=1337684617578807539&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.yahoo.com%2flifestyle%2farticles%2freally-wanted-hate-tiktoker-tracked-100110207.html&c=1337684617578807539&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1760,29 +1870,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337901",
-    "keywordMatched": "MrBeast Burger",
-    "category": "Operational & Financial Intel",
-    "severity": "Low",
-    "riskScore": 28,
-    "confidence": 70,
-    "source": "Bing News",
-    "sourceType": "Bing News",
-    "title": "Judge urges MrBeast to avoid a trial over his burger business and keep his 'dirty laundry' private",
-    "snippet": "Add Yahoo as a preferred source to see more of our stories on Google. A judge urged MrBeast and his burger business partner to settle their legal dispute to avoid a costly trial. YouTuber Jimmy ...",
-    "detectedAt": "238 days ago",
-    "detectedAtEpoch": 1769699280000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2fcelebrity%2farticles%2fjudge-urges-mrbeast-avoid-trial-230839999.html&c=11137040368481233269&mkt=en-us",
-    "status": "New",
-    "assignee": "Unassigned",
-    "tags": [
-      "auto-scan"
-    ],
-    "notes": [],
-    "isDemo": false
-  },
-  {
-    "id": "RES-LIVE-1790337902",
+    "id": "RES-LIVE-1790359473",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1794,7 +1882,7 @@
     "snippet": "Jimmy Donaldson, better known as \"MrBeast,\" is being sued by Virtual Dining Concepts, the ghost kitchen company that operates MrBeast Burger The suit is in response to Donaldson suing Virtual Dining ...",
     "detectedAt": "1145 days ago",
     "detectedAtEpoch": 1691367960000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fvariety.com%2f2023%2fdigital%2fnews%2fmr-beast-sued-burger-company-100-million-1235689127%2f%3f_hsenc%3dp2ANqtz--X1hzA93JJTHOIrLBOg9SMVFyIJ-RE7Qp9xPqZfWcLQgM2y9aPOQBj0UVsWM_Rn0VWXbhF143O6jAWtfFssXXACGd_9w&c=2372579662740326280&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fvariety.com%2f2023%2fdigital%2fnews%2fmr-beast-sued-burger-company-100-million-1235689127%2f%3f_hsenc%3dp2ANqtz--X1hzA93JJTHOIrLBOg9SMVFyIJ-RE7Qp9xPqZfWcLQgM2y9aPOQBj0UVsWM_Rn0VWXbhF143O6jAWtfFssXXACGd_9w&c=2372579662740326280&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1804,7 +1892,29 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337903",
+    "id": "RES-LIVE-1790359474",
+    "keywordMatched": "MrBeast Burger",
+    "category": "Negativity & Defamation",
+    "severity": "Low",
+    "riskScore": 28,
+    "confidence": 70,
+    "source": "Bing News",
+    "sourceType": "Bing News",
+    "title": "MrBeast Burger full menu challenge",
+    "snippet": "MrBeast Burger taste test after its launch, featuring the following order: - Beast-Style Burger (triple + extra patty) - Chris-Style Burger (extra patty) - Chandler-Style Burger (extra patty) - Chicke ...",
+    "detectedAt": "27 days ago",
+    "detectedAtEpoch": 1787994000000,
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.msn.com%2fen-us%2ffood-and-drink%2fbeverages%2fwe-tried-the-whole-mrbeast-burger-menu%2fvi-AA2baIov&c=10609353089990444533&mkt=en-us",
+    "status": "New",
+    "assignee": "Unassigned",
+    "tags": [
+      "auto-scan"
+    ],
+    "notes": [],
+    "isDemo": false
+  },
+  {
+    "id": "RES-LIVE-1790359475",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1816,7 +1926,7 @@
     "snippet": "MrBeast wanted to create his own products. Doing so, he wagered, would allow him to rely less on video sponsorship. That ambition is now costing him. The YouTuber, whose real name is Jimmy Donaldson, ...",
     "detectedAt": "700 days ago",
     "detectedAtEpoch": 1729821600000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.fastcompany.com%2f91214825%2fmrbeasts-food-ventures-keep-backfiring&c=334572367234347313&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.fastcompany.com%2f91214825%2fmrbeasts-food-ventures-keep-backfiring&c=334572367234347313&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1826,7 +1936,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337904",
+    "id": "RES-LIVE-1790359476",
     "keywordMatched": "MrBeast Burger",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1838,7 +1948,7 @@
     "snippet": "To continue reading this content, please enable JavaScript in your browser settings and refresh this page. Preview this article 1 min The indoor adventure park will ...",
     "detectedAt": "581 days ago",
     "detectedAtEpoch": 1740126000000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632ece064f5ca7425bb0cb765011&url=https%3a%2f%2fwww.bizjournals.com%2forlando%2fnews%2f2025%2f02%2f21%2fseminole-towne-center-elev8-mrbeast-food-court.html&c=7257320491955947922&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76e9ae84674a9da8b752853244a&url=https%3a%2f%2fwww.bizjournals.com%2forlando%2fnews%2f2025%2f02%2f21%2fseminole-towne-center-elev8-mrbeast-food-court.html&c=7257320491955947922&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1848,7 +1958,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337905",
+    "id": "RES-LIVE-1790359477",
     "keywordMatched": "MrBeast Burger",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1860,7 +1970,7 @@
     "snippet": "MrBeast Burger is at the center of a bitter legal battle between Jimmy Donaldson and his business partner, Virtual Dining Concepts.",
     "detectedAt": "245 days ago",
     "detectedAtEpoch": 1769132100000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6632f291e4d57a2b8d7ae4f2719aa&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b76f05a945d4a4913309fbbf8f58&url=https%3a%2f%2fwww.businessinsider.com%2fmrbeast-jimmy-donaldson-burger-venture-implosion-lawsuits-2026-1&c=5800859083038194275&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1870,7 +1980,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337909",
+    "id": "RES-LIVE-1790359482",
     "keywordMatched": "MrBeast Productions",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1882,7 +1992,7 @@
     "snippet": "Jimmy Donaldson, a.k.a., MrBeast said he spent years and more than 1,000 hours making the project.",
     "detectedAt": "8 days ago",
     "detectedAtEpoch": 1789590221000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-announces-biggest-youtube-video-ever-10m-budget-sparks-speculation-as-fans-call-it-a-full-scale-production%2far-AA2cpaY9&c=35261635119715029&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.msn.com%2fen-in%2fnews%2fother%2fmrbeast-announces-biggest-youtube-video-ever-10m-budget-sparks-speculation-as-fans-call-it-a-full-scale-production%2far-AA2cpaY9&c=35261635119715029&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1892,7 +2002,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337912",
+    "id": "RES-LIVE-1790359484",
     "keywordMatched": "MrBeast Productions",
     "category": "Operational & Financial Intel",
     "severity": "Low",
@@ -1902,9 +2012,9 @@
     "sourceType": "Bing News",
     "title": "\u2018Ramayana\u2019 X MrBeast: YouTube Star to Meet Ranbir Kapoor and Sai Pallavi at DNEG Mumbai",
     "snippet": "In an unprecedented cross-industry collaboration, global YouTube star MrBeast is set to join actors Ranbir Kapoor and Sai Pallavi for a special event at visual effects studio DNEG in Mumbai to promote ...",
-    "detectedAt": "8 hours ago",
+    "detectedAt": "14 hours ago",
     "detectedAtEpoch": 1790305560000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fwww.latestly.com%2fentertainment%2fbollywood%2framayana-x-mrbeast-youtube-star-to-meet-ranbir-kapoor-and-sai-pallavi-at-dneg-mumbai-7620092.html&c=5464767192153508130&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fwww.latestly.com%2fentertainment%2fbollywood%2framayana-x-mrbeast-youtube-star-to-meet-ranbir-kapoor-and-sai-pallavi-at-dneg-mumbai-7620092.html&c=5464767192153508130&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
@@ -1914,7 +2024,7 @@
     "isDemo": false
   },
   {
-    "id": "RES-LIVE-1790337913",
+    "id": "RES-LIVE-1790359485",
     "keywordMatched": "MrBeast Productions",
     "category": "Negativity & Defamation",
     "severity": "Low",
@@ -1926,7 +2036,7 @@
     "snippet": "There is no bigger YouTuber than MrBeast. With an eye-popping 290 million subscribers, the man more formally known as James \"Jimmy\" Donaldson, has changed the entire landscape of the platform, pushing ...",
     "detectedAt": "818 days ago",
     "detectedAtEpoch": 1719644400000,
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab66330c4ba46bcb32fd17fb13204c9&url=https%3a%2f%2fcollider.com%2fbest-mrbeast-videos%2f&c=13783997409023923784&mkt=en-us",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab6b7700c844fd1b088d57c343908d0&url=https%3a%2f%2fcollider.com%2fbest-mrbeast-videos%2f&c=13783997409023923784&mkt=en-us",
     "status": "New",
     "assignee": "Unassigned",
     "tags": [
